@@ -15,7 +15,7 @@ if [[ ${PV} = *_beta* ]] || [[ ${PV} = *_rc* ]] ; then
 else
 	MY_PV="${MAIN_PV}"
 fi
-KEYWORDS=""
+TESTBUILD=1
 
 VBOX_BUILD_ID="$(ver_cut 4)"
 VBOX_PV="${MY_PV}-${VBOX_BUILD_ID}"
@@ -30,9 +30,16 @@ SDK_P="VirtualBoxSDK-${SDK_PV}"
 
 DESCRIPTION="Family of powerful x86 virtualization products for enterprise and home use"
 HOMEPAGE="https://www.virtualbox.org/"
-SRC_URI="amd64? ( https://download.virtualbox.org/virtualbox/${MY_PV}/${MY_P}_amd64.run )
-	https://download.virtualbox.org/virtualbox/${MY_PV}/${EXTP_P}.vbox-extpack -> ${EXTP_P}.tar.gz"
-	#x86? ( https://download.virtualbox.org/virtualbox/${MY_PV}/${MY_P}_x86.run )
+if [[ "${TESTBUILD}" == 1 ]]; then
+	SRC_URI="amd64? (  https://www.virtualbox.org/download/testcase/${MY_P}_amd64.run )
+		https://www.virtualbox.org/download/testcase/${EXTP_P}.vbox-extpack -> ${EXTP_P}.tar.gz"
+	KEYWORDS=""
+else
+	SRC_URI="amd64? ( https://download.virtualbox.org/virtualbox/${MY_PV}/${MY_P}_amd64.run )
+		https://download.virtualbox.org/virtualbox/${MY_PV}/${EXTP_P}.vbox-extpack -> ${EXTP_P}.tar.gz"
+		#x86? ( https://download.virtualbox.org/virtualbox/${MY_PV}/${MY_P}_x86.run )
+	KEYWORDS="~amd64"
+fi
 
 LICENSE="GPL-2 PUEL"
 SLOT="0"
@@ -40,9 +47,15 @@ IUSE="+additions +chm headless python vboxwebsrv rdesktop-vrdp"
 RESTRICT="bindist mirror"
 
 if [[ "${PV}" != *beta* ]] ; then
+	if [[ "${TESTBUILD}" == 1 ]]; then
+	SRC_URI+="
+                sdk? ( https://www.virtualbox.org/download/testcase/${SDK_P}.zip )"
+        IUSE+=" sdk"
+	else
 	SRC_URI+="
 		sdk? ( https://download.virtualbox.org/virtualbox/${MY_PV}/${SDK_P}.zip )"
 	IUSE+=" sdk"
+	fi
 fi
 
 DEPEND="app-arch/unzip
