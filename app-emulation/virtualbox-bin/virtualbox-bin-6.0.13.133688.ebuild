@@ -21,7 +21,8 @@ VBOX_BUILD_ID="$(ver_cut 4)"
 VBOX_PV="${MY_PV}-${VBOX_BUILD_ID}"
 MY_P="VirtualBox-${VBOX_PV}-Linux"
 # needed as sometimes the extpack gets another build ID
-EXTP_PV="${VBOX_PV}"
+#EXTP_PV="${VBOX_PV}"
+EXTP_PV="6.0.13-133685"
 EXTP_PN="Oracle_VM_VirtualBox_Extension_Pack"
 EXTP_P="${EXTP_PN}-${EXTP_PV}"
 # needed as sometimes the SDK gets another build ID
@@ -63,7 +64,7 @@ DEPEND="app-arch/unzip
 
 RDEPEND="!!app-emulation/virtualbox
 	!app-emulation/virtualbox-additions
-	~app-emulation/virtualbox-modules-6.0.13_pre1
+	~app-emulation/virtualbox-modules-6.0.13_pre3
 	!headless? (
 		dev-libs/glib
 		media-libs/fontconfig
