@@ -12,7 +12,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_7 )
+PYTHON_COMPAT=( python3_{6,7} )
 
 inherit python-r1 eutils autotools toolchain-funcs flag-o-matic multilib db-use user systemd
 
@@ -73,6 +73,7 @@ DEPEND="!libressl? ( dev-libs/openssl:=[-bindist] )
 		${PYTHON_DEPS}
 		dev-python/ply[${PYTHON_USEDEP}]
 	)
+	doc? ( dev-python/sphinx[latex] dev-texlive/texlive-xetex )
 	dev-libs/libuv:="
 
 RDEPEND="${DEPEND}
@@ -98,7 +99,7 @@ src_prepare() {
 	export LDFLAGS="${LDFLAGS} -L${EPREFIX}/usr/$(get_libdir) -ldl"
 
 	# Adjusting PATHs in manpages
-	for i in bin/{named/named.8,check/named-checkconf.8,rndc/rndc.8} ; do
+	for i in doc/man/{named.8in,named-checkconf.8in,rndc.8in} ; do
 		sed -i \
 			-e 's:/etc/named.conf:/etc/bind/named.conf:g' \
 			-e 's:/etc/rndc.conf:/etc/bind/rndc.conf:g' \
@@ -183,7 +184,10 @@ src_install() {
 	dodoc CHANGES README
 
 	if use doc; then
-		dodoc doc/arm/Bv9ARM.pdf
+		#havn't figured out how doc changes affected Bv9
+		if use arm; then
+			dodoc doc/arm/Bv9ARM.pdf
+		fi
 
 		docinto misc
 		dodoc -r doc/misc/
@@ -217,7 +221,7 @@ src_install() {
 	newenvd "${FILESDIR}"/10bind.env 10bind
 
 	# Let's get rid of those tools and their manpages since they're provided by bind-tools
-	rm -f "${ED}"/usr/share/man/man1/{dig,host,nslookup}.1* || die
+	rm -f "${ED}"/usr/share/man/man1/{dig,host,nslookup,delv,nsupdate}.1* || die
 	rm -f "${ED}"/usr/share/man/man8/nsupdate.8* || die
 	rm -f "${ED}"/usr/bin/{dig,host,nslookup,nsupdate} || die
 	rm -f "${ED}"/usr/sbin/{dig,host,nslookup,nsupdate} || die
