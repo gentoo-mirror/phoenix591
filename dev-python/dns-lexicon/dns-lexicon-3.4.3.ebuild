@@ -4,6 +4,7 @@
 EAPI=6
 
 PYTHON_COMPAT=( python{3_6,3_7,3_8,3_9} )
+DISTUTILS_USE_SETUPTOOLS=rdepend
 inherit distutils-r1
 
 DESCRIPTION="Manipulate DNS records on various DNS providers in a standardized/agnostic way"

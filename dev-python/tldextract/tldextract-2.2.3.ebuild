@@ -4,6 +4,7 @@
 EAPI=7
 
 PYTHON_COMPAT=( python{3_6,3_7,3_8,3_9} )
+DISTUTILS_USE_SETUPTOOLS=rdepend
 inherit distutils-r1
 
 DESCRIPTION="Accurately separate the TLD from the registered domain and subdomains of a URL."

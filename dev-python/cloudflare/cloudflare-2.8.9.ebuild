@@ -4,6 +4,7 @@
 EAPI=7
 
 PYTHON_COMPAT=( python3_6 python3_7 python3_8)
+DISTUTILS_USE_SETUPTOOLS=rdepend
 inherit distutils-r1
 
 DESCRIPTION="Python wrapper for the Cloudflare v4 API"
@@ -29,4 +30,9 @@ python_prepare_all() {
 	rm -r examples
 
 	distutils-r1_python_prepare_all
+}
+python_install_all() {
+	newman cli4/cli4.man cli4.1
+	distutils-r1_python_install_all
+	rm -R "${D}/usr/man"
 }

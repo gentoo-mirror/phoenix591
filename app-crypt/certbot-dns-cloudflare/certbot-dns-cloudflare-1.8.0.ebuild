@@ -12,7 +12,7 @@ else
 	KEYWORDS="~amd64 ~x86"
 	S=${WORKDIR}/certbot-${PV}/${PN}
 fi
-
+DISTUTILS_USE_SETUPTOOLS=rdepend
 inherit distutils-r1
 
 DESCRIPTION="Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)"
