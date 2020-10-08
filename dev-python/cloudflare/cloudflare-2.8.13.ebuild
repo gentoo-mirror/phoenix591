@@ -12,7 +12,7 @@ HOMEPAGE="https://pypi.org/project/cloudflare/"
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64 ~x86 ~arm64"
 IUSE=""
 
 DEPEND="dev-python/jsonlines[${PYTHON_USEDEP}]"
