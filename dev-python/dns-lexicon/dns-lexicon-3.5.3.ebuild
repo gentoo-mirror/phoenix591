@@ -16,6 +16,8 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86 ~arm64"
 IUSE=""
 
+RESTRICT="mirror" # overlay, don't bother gentoo mirrors
+
 DEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 "
