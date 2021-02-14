@@ -1,4 +1,5 @@
 amd64 hardplasma dev
 amd64 hard-plasma-gnome dev
 amd64 hard-systemd dev
+arm64 musl-hard-plasma dev
 #aarch64 standalone dev
