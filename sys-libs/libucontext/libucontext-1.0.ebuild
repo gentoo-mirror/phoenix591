@@ -39,7 +39,8 @@ src_prepare() {
 src_configure() {
 	local emesonargs=(
 	#normally the symbols this libary exports are defined by glibc so need a prefix if for some reason
-		#this is installed on a glibc system. Not sure about uclibc's needs.
+		# this is installed on a glibc system. uclibc-ng has them defined if UCLIBC_SUSV3_LEGACY is set so
+		# I'll only set unprefixed for musl
 	-D export_unprefixed=$(usex elibc_musl true false)
 	)
 	meson_src_configure
