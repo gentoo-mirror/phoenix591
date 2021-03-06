@@ -32,6 +32,8 @@ COMMON_DEPEND="
 	mycroft? ( dev-python/mycroft-core )
 	kde-plasma/plasma-nano
 	>=dev-libs/wayland-1.15
+	dev-libs/icu:=
+	dev-libs/libffi:=
 	>=dev-qt/qtmultimedia-${QTMIN}
 	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtnetwork-${QTMIN}:5
