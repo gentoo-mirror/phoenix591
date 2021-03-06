@@ -21,7 +21,6 @@ IUSE="+doc"
 
 RDEPEND="app-shells/bash"
 
-BDEPEND="app-arch/gzip"
 
 src_install() {
 	emake DESTDIR="${D}" install-bin
