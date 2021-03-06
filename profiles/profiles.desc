@@ -1,5 +1,2 @@
-amd64 hardplasma dev
-amd64 hard-plasma-gnome dev
-amd64 hard-systemd dev
-arm64 musl-hard-plasma dev
-#aarch64 standalone dev
+amd64 amd64/hardened-plasma-and-gnome-with-systemd dev
+amd64 amd64/hardened-systemd dev
