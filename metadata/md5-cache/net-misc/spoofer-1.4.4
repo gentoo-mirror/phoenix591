@@ -1,5 +1,5 @@
 DEFINED_PHASES=install postinst prepare setup
-DEPEND=dev-libs/protobuf-c:= net-libs/libpcap !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:0= ) qt5? ( dev-qt/qtcore:5 dev-qt/qtnetwork:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 ) virtual/pkgconfig >=app-portage/elt-patches-20170815 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 virtual/pkgconfig
+DEPEND=dev-libs/protobuf-c:= net-libs/libpcap !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:0= ) qt5? ( dev-qt/qtcore:5 dev-qt/qtnetwork:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 ) virtual/pkgconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.2-r1:1.16 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 virtual/pkgconfig
 DESCRIPTION=A tool to assess of deployment of source address validation
 EAPI=6
 HOMEPAGE=https://spoofer.caida.org
@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=dev-libs/protobuf-c:= net-libs/libpcap !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:0= ) qt5? ( dev-qt/qtcore:5 dev-qt/qtnetwork:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 ) net-analyzer/traceroute virtual/tmpfiles
 SLOT=0
 SRC_URI=https://www.caida.org/projects/spoofer/downloads/spoofer-1.4.4.tar.gz
-_eclasses_=autotools	1bf086cdd7356f5c9a4acd9727bd2065	desktop	b1d22ac8bdd4679ab79c71aca235009d	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	1d91b03d42ab6308b5f4f6b598ed110e	systemd	71fd8d2065d102753fb9e4d20eaf3e9f	tmpfiles	6170dc7770585fb3f16efdee789a3218	toolchain-funcs	2f8b8f320bee13b71a8a54cc6d09e08a	user	00484e1be1aac73e24fca1c99557a7d6
+_eclasses_=autotools	9988ecbe04129214297a7bbf3d253710	desktop	c0d27bf73aa08ca05b663dbd31fbef28	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	d410501a125f99ffb560b0c523cd3d1e	systemd	74b223e42834adf09a2d21fe5fe13741	tmpfiles	6170dc7770585fb3f16efdee789a3218	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	user	b0a0d4ca9e3f79c38f8f4143b8d5a2d8	user-info	a2abd4e2f4c3b9b06d64bf1329359a02
 _md5_=c0a221f7ad30dc4dae15338b8e95bb76

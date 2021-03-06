@@ -1,0 +1,12 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install postinst unpack
+DESCRIPTION=Fetch various blocklists and generate a BIND zone from them.
+EAPI=7
+HOMEPAGE=https://github.com/Trellmor/bind-adblock
+KEYWORDS=~amd64 ~arm64
+LICENSE=MIT
+PROPERTIES=live
+RDEPEND=dev-python/pycryptodome dev-python/dnspython dev-python/requests dev-python/pyyaml
+SLOT=0
+_eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441
+_md5_=155f4240776c3c6383f487811f98ee3c
