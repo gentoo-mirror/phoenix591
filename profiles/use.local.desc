@@ -1,0 +1,43 @@
+# This file is deprecated as per GLEP 56 in favor of metadata.xml.
+# Please add your descriptions to your package's metadata.xml ONLY.
+# * generated automatically using pmaint *
+
+dev-util/idea-community:custom-jdk - Install and use IntelliJ's custom JRE.
+dev-util/idea-community:jbr11 - Install and use the Java 11 based version of JetBrains Runtime.
+dev-util/idea-community:jbr8 - Install and use the Java 8 based version of JetBrains Runtime.
+games-util/multimc:zlib - Enables sys-libs/zlib support in the NBT library
+kde-plasma/plasma-bigscreen:mycroft - Uses dev-python/mycroft-core for voice skills.
+media-sound/pulseaudio:X - Build the X11 publish module to export PulseAudio information through X11 protocol for clients to make use. Don't enable this flag if you want to use a system wide instance. If unsure, enable this flag.
+media-sound/pulseaudio:alsa-plugin - Request installing media-plugins/alsa-plugins with PulseAudio plugin enabled. This ensures that clients supporting ALSA only will use PulseAudio.
+media-sound/pulseaudio:asyncns - Use libasyncns for asynchronous name resolution.
+media-sound/pulseaudio:doc - Build the doxygen-described API documentation.
+media-sound/pulseaudio:elogind - Use sys-auth/elogind for giving each session a PA client
+media-sound/pulseaudio:equalizer - Enable the equalizer module (requires sci-libs/fftw).
+media-sound/pulseaudio:gconf - Ensure gnome-base/gconf is present for pulseaudio GConf to GSettings module automatic migration (keeping the user configuration)
+media-sound/pulseaudio:gdbm - Use sys-libs/gdbm to store PulseAudio databases. Recommended for desktop usage. This flag causes the whole package to be licensed under GPL-2 or later.
+media-sound/pulseaudio:glib - Add support to dev-libs/glib-based mainloop for the libpulse client library, to allow using libpulse on glib-based programs. Build the GSettings PA module.
+media-sound/pulseaudio:native-headset - Build with native HSP backend for bluez 5.
+media-sound/pulseaudio:ofono-headset - Build with oFono HFP backend for bluez 5, requires net-misc/ofono.
+media-sound/pulseaudio:oss - Enable OSS sink/source (output/input). Deprecated, upstream does not support this on systems where other sink/source systems are available (i.e.: Linux). The padsp wrapper is now always build if the system supports OSS at all.
+media-sound/pulseaudio:realtime - Makes PulseAudio use RealtimeKit (sys-auth/rtkit) to get real-time priority while running.
+media-sound/pulseaudio:ssl - Use dev-libs/openssl to provide support for RAOP (AirPort) streaming.
+media-sound/pulseaudio:system-wide - Allow preparation and installation of the system-wide init script for PulseAudio. Since this support is only supported for embedded situations, do not enable without reading the upstream instructions at https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/WhatIsWrongWithSystemWide/ .
+media-sound/pulseaudio:systemd - Build with sys-apps/systemd support to replace standalone ConsoleKit.
+media-sound/pulseaudio:webrtc-aec - Uses the webrtc.org AudioProcessing library for enhancing VoIP calls greatly in applications that support it by performing acoustic echo cancellation, analog gain control, noise suppression and other processing.
+net-dns/bind:dlz - Enables dynamic loaded zones, 3rd party extension
+net-dns/bind:dnsrps - Enable the DNS Response Policy Service (DNSRPS) API, a mechanism to allow an external response policy provider
+net-dns/bind:dnstap - Enables dnstap packet logging
+net-dns/bind:fixed-rrset - Enables fixed rrset-order option
+net-dns/bind:geoip2 - Enable GeoIP2 API from MaxMind
+net-dns/bind:gssapi - Enable gssapi support
+net-dns/bind:json - Enable JSON statistics channel
+net-dns/bind:lmdb - Enable LMDB support to store configuration for 'addzone' zones
+net-dns/bind:urandom - Use /dev/urandom instead of /dev/random
+net-dns/bind-tools:gssapi - Enable gssapi support
+net-misc/curl-gnutls:brotli - Enable brotli compression support
+net-misc/curl-gnutls:http2 - Enabled HTTP/2.0 support
+net-misc/curl-gnutls:metalink - Enable metalink support
+net-misc/curl-gnutls:rtmp - Enable RTMP Streaming Media support
+net-misc/curl-gnutls:ssh - Enabled SSH urls in curl using libssh2
+sys-apps/pacman:doc - Install extended documentation using app-doc/doxygen. (Man pages are included by default.)
+sys-apps/pacman:gpg - Enable GPG signature verification using app-crypt/gpgme
