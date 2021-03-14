@@ -17,12 +17,12 @@ SLOT="0"
 
 KEYWORDS="~amd64"
 
-IUSE="+doc"
+#IUSE="+doc"
 
 RDEPEND="app-shells/bash"
 
 
 src_install() {
 	emake DESTDIR="${D}" install-bin
-	usex doc && doman doc/${PN}.8
+	doman doc/${PN}.8
 }
