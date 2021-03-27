@@ -7,6 +7,9 @@ dev-util/idea-community:jbr11 - Install and use the Java 11 based version of Jet
 dev-util/idea-community:jbr8 - Install and use the Java 8 based version of JetBrains Runtime.
 games-util/multimc:zlib - Enables sys-libs/zlib support in the NBT library
 kde-plasma/plasma-bigscreen:mycroft - Uses dev-python/mycroft-core for voice skills.
+media-sound/mumble:g15 - Enable support for the Logitech G15 LCD (and compatible devices).
+media-sound/mumble:rnnoise - Enable alternative noise suppression option based on RNNoise.
+media-sound/mumble:speech - Enable text-to-speech support in Mumble.
 media-sound/pulseaudio:X - Build the X11 publish module to export PulseAudio information through X11 protocol for clients to make use. Don't enable this flag if you want to use a system wide instance. If unsure, enable this flag.
 media-sound/pulseaudio:alsa-plugin - Request installing media-plugins/alsa-plugins with PulseAudio plugin enabled. This ensures that clients supporting ALSA only will use PulseAudio.
 media-sound/pulseaudio:asyncns - Use libasyncns for asynchronous name resolution.

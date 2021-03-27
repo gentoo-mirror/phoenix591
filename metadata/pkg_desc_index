@@ -17,6 +17,7 @@ games-util/navigraph-fms-data-manager 1.6.1.1129: Client for Navigraph FMS Data
 games-util/qjoypad 4.3.1: Translate gamepad/joystick input into key strokes/mouse actions in X
 kde-plasma/plasma-bigscreen 9999: KDE Plasma Big Screen Launcher
 kde-plasma/plasma-nano 9999: KDE Plasma Minimal shell package
+media-sound/mumble 9999: Mumble is an open source, low-latency, high quality voice chat software
 media-sound/pulseaudio 12.2-r2: A networked sound server with an advanced plugin system
 net-dns/bind 9.16.11 9.16.12 9.17.10: Berkeley Internet Name Domain - Name Server
 net-dns/bind-adblock 9999: Fetch various blocklists and generate a BIND zone from them.
