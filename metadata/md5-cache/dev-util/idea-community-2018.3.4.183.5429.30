@@ -3,11 +3,12 @@ DEPEND=!dev-util/idea-community:14 !dev-util/idea-community:15
 DESCRIPTION=A complete toolset for web, mobile and enterprise development
 EAPI=7
 HOMEPAGE=https://www.jetbrains.com/idea
+INHERIT=eutils desktop
 IUSE=-custom-jdk
 KEYWORDS=~amd64 ~x86
 LICENSE=Apache-2.0 custom-jdk? ( GPL-2 )
 RDEPEND=!dev-util/idea-community:14 !dev-util/idea-community:15 >=virtual/jdk-1.7:*
 SLOT=0
 SRC_URI=https://download.jetbrains.com/idea/ideaIC-2018.3.4-no-jdk.tar.gz -> ideaIC-183.5429.30.tar.gz custom-jdk? ( x86? ( https://bintray.com/jetbrains/intellij-jdk/download_file?file_path=jbrx-8u202-linux-i586-b1483.24.tar.gz -> jbrx-8u202-linux-i586-b1483.24.tar.gz ) amd64? ( https://bintray.com/jetbrains/intellij-jdk/download_file?file_path=jbrx-8u202-linux-x64-b1483.24.tar.gz -> jbrx-8u202-linux-x64-b1483.24.tar.gz ) )
-_eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	edos2unix	33e347e171066657f91f8b0c72ec8773	eutils	2d5b3f4b315094768576b6799e4f926e	l10n	8cdd85e169b835d518bc2fd59f780d8e	wrapper	4251d4c84c25f59094fd557e0063a974
+_eclasses_=edos2unix	33e347e171066657f91f8b0c72ec8773	l10n	8cdd85e169b835d518bc2fd59f780d8e	wrapper	4251d4c84c25f59094fd557e0063a974	eutils	2d5b3f4b315094768576b6799e4f926e	desktop	c0d27bf73aa08ca05b663dbd31fbef28
 _md5_=a0dfea0a7547fdef365ffb95dd4a8bf2
