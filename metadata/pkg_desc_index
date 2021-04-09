@@ -7,7 +7,6 @@ dev-python/cloudflare 2.8.14 2.8.15: Python wrapper for the Cloudflare v4 API
 dev-python/dns-lexicon 3.5.2 3.5.3: Manipulate DNS records on various DNS providers in a standardized/agnostic way
 dev-python/jsonlines 1.2.0 2.0.0 9999: Library with helpers for the jsonlines file format
 dev-python/mycroft-core 9999: Voice command core
-dev-python/pyinotify 0.9.6: Python module used for monitoring filesystems events
 dev-python/requests-file 1.5.1: File transport adapter for Requests
 dev-python/tldextract 2.2.3 3.1.0: Accurately separate the TLD from the registered domain and subdomains of a URL.
 dev-util/idea-community 2017.2.2.172.3757.52-r1 2018.3.1.183.4588.61-r1 2018.3.3.183.5153.38 2018.3.4.183.5429.30 2019.1.191.6183.87: A complete toolset for web, mobile and enterprise development
