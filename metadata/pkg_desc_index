@@ -1,5 +1,6 @@
 app-crypt/certbot-dns-cloudflare 1.13.0 1.14.0: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
 app-crypt/certbot-nginx 1.5.0 1.6.0: Nginx plugin for certbot (Let's Encrypt Client)
+app-emulation/wine-mono 6.1.1: Wine Mono is a replacement for the .NET runtime and class libraries in Wine
 app-emulation/wine-vanilla 6.6: Free implementation of Windows(tm) on Unix, without external patchsets
 app-portage/elicense 9999: Scans for installed packages with nonfree licenses that arn't accepted
 dev-libs/libindicator 12.10.1-r301: A set of symbols and convience functions that all indicators would like to use
