@@ -10,5 +10,5 @@ LICENSE=MIT
 RDEPEND=virtual/libusb:* >=dev-libs/mxml-2.7 <dev-libs/mxml-3.0 >=dev-qt/qtgui-4.8.4-r1 virtual/wine
 SLOT=0
 SRC_URI=https://github.com/uglyDwarf/linuxtrack/archive/0.99.19.tar.gz -> linuxtrack-0.99.19.tar.gz
-_eclasses_=toolchain-funcs	24921b57d6561d87cbef4916a296ada4	multilib	d410501a125f99ffb560b0c523cd3d1e	libtool	f143db5a74ccd9ca28c1234deffede96	autotools	6ff8412ccf96444868b310b0a28973ba
+_eclasses_=autotools	6ff8412ccf96444868b310b0a28973ba	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	d410501a125f99ffb560b0c523cd3d1e	toolchain-funcs	24921b57d6561d87cbef4916a296ada4
 _md5_=08e98189b16abbce2b09e4b314230c90

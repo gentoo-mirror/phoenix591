@@ -10,5 +10,5 @@ LICENSE=MIT
 PROPERTIES=live
 RDEPEND=virtual/libusb:* >=dev-libs/mxml-2.7 <dev-libs/mxml-3.0 >=dev-qt/qtgui-4.8.4-r1 virtual/wine
 SLOT=0
-_eclasses_=toolchain-funcs	24921b57d6561d87cbef4916a296ada4	multilib	d410501a125f99ffb560b0c523cd3d1e	libtool	f143db5a74ccd9ca28c1234deffede96	autotools	6ff8412ccf96444868b310b0a28973ba	git-r3	b8e8c92aa5fe8df7187e466138eb4e52
+_eclasses_=autotools	6ff8412ccf96444868b310b0a28973ba	git-r3	b8e8c92aa5fe8df7187e466138eb4e52	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	d410501a125f99ffb560b0c523cd3d1e	toolchain-funcs	24921b57d6561d87cbef4916a296ada4
 _md5_=e91576be526b9992fa97ac7e68313e5e

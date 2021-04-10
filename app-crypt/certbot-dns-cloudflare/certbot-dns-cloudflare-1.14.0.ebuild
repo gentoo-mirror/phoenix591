@@ -3,12 +3,13 @@
 
 EAPI=7
 PYTHON_COMPAT=(python{3_8,3_9})
+BASEP=certbot
 if [[ ${PV} == 9999* ]]; then
 	EGIT_REPO_URI="https://github.com/certbot/certbot.git"
 	inherit git-r3
 	S=${WORKDIR}/${P}/${PN}
 else
-	SRC_URI="https://github.com/certbot/certbot/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+	SRC_URI="https://github.com/certbot/certbot/archive/v${PV}.tar.gz -> ${BASEP}-${PV}.tar.gz"
 	KEYWORDS="~amd64 ~x86 ~arm64"
 	S=${WORKDIR}/certbot-${PV}/${PN}
 fi
