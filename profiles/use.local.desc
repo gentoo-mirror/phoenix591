@@ -2,30 +2,6 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
-app-emulation/wine-vanilla:capi - Enable ISDN support via CAPI
-app-emulation/wine-vanilla:custom-cflags - Bypass strip-flags; use at your own peril
-app-emulation/wine-vanilla:dos - Pull in games-emulation/dosbox to run DOS applications
-app-emulation/wine-vanilla:faudio - Pull in app-emulation/faudio to provide XAudio2 functionality
-app-emulation/wine-vanilla:gecko - Add support for the Gecko engine when using iexplore
-app-emulation/wine-vanilla:gssapi - Use GSSAPI (Kerberos SSP support)
-app-emulation/wine-vanilla:gstreamer - Use media-libs/gstreamer to provide DirectShow functionality;
-app-emulation/wine-vanilla:mingw - Build PE files using a MinGW cross compiler
-app-emulation/wine-vanilla:mono - Add support for .NET using Wine's Mono add-on
-app-emulation/wine-vanilla:netapi - Use libnetapi from net-fs/samba to support Windows networks in netapi32.dll
-app-emulation/wine-vanilla:opencl - Enable OpenCL support
-app-emulation/wine-vanilla:osmesa - Add support for OpenGL in bitmaps using libOSMesa
-app-emulation/wine-vanilla:pcap - Support packet capture software (e.g. wireshark)
-app-emulation/wine-vanilla:perl - Install helpers written in perl (winedump/winemaker)
-app-emulation/wine-vanilla:prelink - Run prelink on DLLs during build; For Gentoo hardened, do not disable if you do not know what this means as it can break things at runtime
-app-emulation/wine-vanilla:realtime - Pull in sys-auth/rtkit for low-latency pulseaudio support
-app-emulation/wine-vanilla:run-exes - Use Wine to open and run .EXE and .MSI files
-app-emulation/wine-vanilla:samba - Add support for NTLM auth. See: https://web.archive.org/web/20160108123008/http://wiki.winehq.org:80/NtlmAuthSetupGuide and https://web.archive.org/web/20150906013746/http://wiki.winehq.org/NtlmSigningAndSealing (these pages are not currently in the updated WineHQ Wiki).
-app-emulation/wine-vanilla:sdl - Add support for gamepad detection using SDL
-app-emulation/wine-vanilla:udev - Use virtual/libudev to provide plug and play support
-app-emulation/wine-vanilla:unwind - Use sys-libs/libunwind to unwind the stack
-app-emulation/wine-vanilla:usb - Use virtual/libusb to provide USB support
-app-emulation/wine-vanilla:vkd3d - Use app-emulation/vkd3d to provide Direct3D 12 support
-app-emulation/wine-vanilla:vulkan - Enable Vulkan drivers
 dev-util/idea-community:custom-jdk - Install and use IntelliJ's custom JRE.
 dev-util/idea-community:jbr11 - Install and use the Java 11 based version of JetBrains Runtime.
 dev-util/idea-community:jbr8 - Install and use the Java 8 based version of JetBrains Runtime.
@@ -34,23 +10,6 @@ kde-plasma/plasma-bigscreen:mycroft - Uses dev-python/mycroft-core for voice ski
 media-sound/mumble:g15 - Enable support for the Logitech G15 LCD (and compatible devices).
 media-sound/mumble:rnnoise - Enable alternative noise suppression option based on RNNoise.
 media-sound/mumble:speech - Enable text-to-speech support in Mumble.
-media-sound/pulseaudio:X - Build the X11 publish module to export PulseAudio information through X11 protocol for clients to make use. Don't enable this flag if you want to use a system wide instance. If unsure, enable this flag.
-media-sound/pulseaudio:alsa-plugin - Request installing media-plugins/alsa-plugins with PulseAudio plugin enabled. This ensures that clients supporting ALSA only will use PulseAudio.
-media-sound/pulseaudio:asyncns - Use libasyncns for asynchronous name resolution.
-media-sound/pulseaudio:doc - Build the doxygen-described API documentation.
-media-sound/pulseaudio:elogind - Use sys-auth/elogind for giving each session a PA client
-media-sound/pulseaudio:equalizer - Enable the equalizer module (requires sci-libs/fftw).
-media-sound/pulseaudio:gconf - Ensure gnome-base/gconf is present for pulseaudio GConf to GSettings module automatic migration (keeping the user configuration)
-media-sound/pulseaudio:gdbm - Use sys-libs/gdbm to store PulseAudio databases. Recommended for desktop usage. This flag causes the whole package to be licensed under GPL-2 or later.
-media-sound/pulseaudio:glib - Add support to dev-libs/glib-based mainloop for the libpulse client library, to allow using libpulse on glib-based programs. Build the GSettings PA module.
-media-sound/pulseaudio:native-headset - Build with native HSP backend for bluez 5.
-media-sound/pulseaudio:ofono-headset - Build with oFono HFP backend for bluez 5, requires net-misc/ofono.
-media-sound/pulseaudio:oss - Enable OSS sink/source (output/input). Deprecated, upstream does not support this on systems where other sink/source systems are available (i.e.: Linux). The padsp wrapper is now always build if the system supports OSS at all.
-media-sound/pulseaudio:realtime - Makes PulseAudio use RealtimeKit (sys-auth/rtkit) to get real-time priority while running.
-media-sound/pulseaudio:ssl - Use dev-libs/openssl to provide support for RAOP (AirPort) streaming.
-media-sound/pulseaudio:system-wide - Allow preparation and installation of the system-wide init script for PulseAudio. Since this support is only supported for embedded situations, do not enable without reading the upstream instructions at https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/WhatIsWrongWithSystemWide/ .
-media-sound/pulseaudio:systemd - Build with sys-apps/systemd support to replace standalone ConsoleKit.
-media-sound/pulseaudio:webrtc-aec - Uses the webrtc.org AudioProcessing library for enhancing VoIP calls greatly in applications that support it by performing acoustic echo cancellation, analog gain control, noise suppression and other processing.
 net-dns/bind:dlz - Enables dynamic loaded zones, 3rd party extension
 net-dns/bind:dnsrps - Enable the DNS Response Policy Service (DNSRPS) API, a mechanism to allow an external response policy provider
 net-dns/bind:dnstap - Enables dnstap packet logging
@@ -61,10 +20,3 @@ net-dns/bind:json - Enable JSON statistics channel
 net-dns/bind:lmdb - Enable LMDB support to store configuration for 'addzone' zones
 net-dns/bind:urandom - Use /dev/urandom instead of /dev/random
 net-dns/bind-tools:gssapi - Enable gssapi support
-net-misc/curl-gnutls:brotli - Enable brotli compression support
-net-misc/curl-gnutls:http2 - Enabled HTTP/2.0 support
-net-misc/curl-gnutls:metalink - Enable metalink support
-net-misc/curl-gnutls:rtmp - Enable RTMP Streaming Media support
-net-misc/curl-gnutls:ssh - Enabled SSH urls in curl using libssh2
-sys-apps/pacman:doc - Install extended documentation using app-doc/doxygen. (Man pages are included by default.)
-sys-apps/pacman:gpg - Enable GPG signature verification using app-crypt/gpgme
