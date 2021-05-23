@@ -1,4 +1,4 @@
-# Copyright 2020 Gentoo Authors
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -12,13 +12,13 @@ HOMEPAGE="https://pypi.org/project/cloudflare/"
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86 ~arm64"
+KEYWORDS="~amd64 ~arm64 ~x86"
 IUSE=""
 RESTRICT="mirror" #overlay, not goign to be mirrored
 DEPEND="dev-python/jsonlines[${PYTHON_USEDEP}]"
 RDEPEND="( ${DEPEND}
-        dev-python/beautifulsoup[${PYTHON_USEDEP}]
-        dev-python/future[${PYTHON_USEDEP}]
+	dev-python/beautifulsoup[${PYTHON_USEDEP}]
+	dev-python/future[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
 	dev-python/pyyaml[${PYTHON_USEDEP}] )"
 BDEPEND=""

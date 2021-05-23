@@ -1,1 +1,1 @@
-jsonlines-1.2.0.ebuild
+jsonlines-2.0.0.ebuild
