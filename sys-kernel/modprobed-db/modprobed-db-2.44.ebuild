@@ -7,7 +7,7 @@ DESCRIPTION="This utility tracks modules loaded by the kernel, for localmodconfi
 
 HOMEPAGE="https://github.com/graysky2/modprobed-db"
 
-SRC_URI="https://github.con/graysky2/modprobed-db/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/graysky2/modprobed-db/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 #S="${WORKDIR}/${P}"
 
