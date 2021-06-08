@@ -1,4 +1,4 @@
-app-crypt/certbot-dns-cloudflare 1.15.0: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
+app-crypt/certbot-dns-cloudflare 1.15.0 1.16.0: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
 app-crypt/certbot-nginx 1.5.0 1.6.0: Nginx plugin for certbot (Let's Encrypt Client)
 app-emulation/wine-mono 6.1.1: Wine Mono is a replacement for the .NET runtime and class libraries in Wine
 dev-embedded/rpi-eeprom 2021.04.29 9999: Updater for Raspberry Pi 4 bootloader and the VL805 USB controller
