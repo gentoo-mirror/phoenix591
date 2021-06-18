@@ -41,6 +41,10 @@ BDEPEND="
 	virtual/pkgconfig
 "
 
+PATCHES=(
+	"${FILESDIR}/june-fix.patch"
+)
+
 S="${WORKDIR}/${MY_P}"
 
 # bug 479092, requires networking

@@ -1,0 +1,33 @@
+From 08eeebb6a7ef45ac796a0df47a92350473a4e0b8 Mon Sep 17 00:00:00 2001
+From: Mark Andrews <marka@isc.org>
+Date: Fri, 18 Jun 2021 11:29:45 +1000
+Subject: [PATCH 1/4] Add w and W to maptoupper and maptolower tables
+
+---
+ lib/dns/rbtdb.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/lib/dns/rbtdb.c b/lib/dns/rbtdb.c
+index 11bd4712d9..06ac91d793 100644
+--- a/lib/dns/rbtdb.c
++++ b/lib/dns/rbtdb.c
+@@ -9874,7 +9874,8 @@ static const unsigned char maptolower[256] = {
+ 	['F'] = 'f', ['G'] = 'g', ['H'] = 'h', ['I'] = 'i', ['J'] = 'j',
+ 	['K'] = 'k', ['L'] = 'l', ['M'] = 'm', ['N'] = 'n', ['O'] = 'o',
+ 	['P'] = 'p', ['Q'] = 'q', ['R'] = 'r', ['S'] = 's', ['T'] = 't',
+-	['U'] = 'u', ['V'] = 'v', ['X'] = 'x', ['Y'] = 'y', ['Z'] = 'z',
++	['U'] = 'u', ['V'] = 'v', ['W'] = 'w', ['X'] = 'x', ['Y'] = 'y',
++	['Z'] = 'z',
+ };
+ 
+ static const unsigned char maptoupper[256] = {
+@@ -9882,7 +9883,8 @@ static const unsigned char maptoupper[256] = {
+ 	['f'] = 'F', ['g'] = 'G', ['h'] = 'H', ['i'] = 'I', ['j'] = 'J',
+ 	['k'] = 'K', ['l'] = 'L', ['m'] = 'M', ['n'] = 'N', ['o'] = 'O',
+ 	['p'] = 'P', ['q'] = 'Q', ['r'] = 'R', ['s'] = 'S', ['t'] = 'T',
+-	['u'] = 'U', ['v'] = 'V', ['x'] = 'X', ['y'] = 'Y', ['z'] = 'Z',
++	['u'] = 'U', ['v'] = 'V', ['w'] = 'W', ['x'] = 'X', ['y'] = 'Y',
++	['z'] = 'Z',
+ };
+ 
+ static void
