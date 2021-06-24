@@ -12,7 +12,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{6..9} )
+PYTHON_COMPAT=( python3_{7..9} )
 
 inherit python-r1 autotools toolchain-funcs flag-o-matic  db-use systemd tmpfiles
 
@@ -33,9 +33,7 @@ SRC_URI="https://downloads.isc.org/isc/bind9/${PV}/${P}.tar.xz
 
 LICENSE="Apache-2.0 BSD BSD-2 GPL-2 HPND ISC MPL-2.0"
 SLOT="0"
-#KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux"
-KEYWORDS=""
-RESTRICT="mirror"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux"
 # -berkdb by default re bug 602682
 IUSE="-berkdb +caps +dlz dnstap doc dnsrps fixed-rrset geoip geoip2 gssapi
 json ldap lmdb mysql odbc postgres python selinux static-libs
@@ -58,7 +56,7 @@ REQUIRED_USE="
 DEPEND="
 	acct-group/named
 	acct-user/named
-	net-libs/nghttp2:=
+	berkdb? ( sys-libs/db:= )
 	dev-libs/openssl:=[-bindist]
 	mysql? ( dev-db/mysql-connector-c:0= )
 	odbc? ( >=dev-db/unixODBC-2.2.6 )
@@ -82,14 +80,12 @@ DEPEND="
 
 RDEPEND="${DEPEND}
 	selinux? ( sec-policy/selinux-bind )
-	sys-process/psmisc
-	!net-dns/bind-tools"
+	sys-process/psmisc"
 
 S="${WORKDIR}/${MY_P}"
 
 PATCHES=(
 	"${FILESDIR}/ldap-library-path-on-multilib-machines.patch"
-	"${FILESDIR}/june-fix.patch"
 )
 
 # bug 479092, requires networking
@@ -114,7 +110,7 @@ src_prepare() {
 }
 
 src_configure() {
-	bind_configure
+	bind_configure --without-python
 	use python && python_foreach_impl python_configure
 }
 
@@ -124,6 +120,7 @@ bind_configure() {
 		--prefix="${EPREFIX}"/usr
 		--sysconfdir=/etc/bind
 		--localstatedir=/var
+		--with-libtool
 		--enable-full-report
 		--without-readline
 		--with-openssl="${EPREFIX}"/usr
@@ -132,6 +129,8 @@ bind_configure() {
 		$(use_enable dnsrps)
 		$(use_enable dnstap)
 		$(use_enable fixed-rrset)
+		# $(use_enable static-libs static)
+		$(use_with berkdb dlz-bdb)
 		$(use_with dlz dlopen)
 		$(use_with dlz dlz-filesystem)
 		$(use_with dlz dlz-stub)
@@ -180,7 +179,6 @@ python_configure() {
 
 src_compile() {
 	default
-	emake -C doc/man/ man $(usev doc)
 	use python && python_foreach_impl python_compile
 }
 
@@ -192,10 +190,11 @@ python_compile() {
 
 src_install() {
 	default
-	# don't create /var/run
-#	rmdir "${ED}"/var/run || die
 
-	dodoc CHANGES README.md
+	# don't create /var/run
+	rmdir "${ED}"/var/run || die
+
+	dodoc CHANGES README
 
 	if use doc; then
 		docinto misc
@@ -204,6 +203,7 @@ src_install() {
 		# might a 'html' useflag make sense?
 		docinto html
 		dodoc -r doc/arm/
+
 		docinto contrib
 		dodoc contrib/scripts/{nanny.pl,named-bootconf.sh}
 
@@ -228,23 +228,16 @@ src_install() {
 
 	newenvd "${FILESDIR}"/10bind.env 10bind
 
-
-
-	doman doc/man/*.{1,5,8}
-
-
-
-	# unifying bind with bind-tools, they share lots
 	# Let's get rid of those tools and their manpages since they're provided by bind-tools
-#	rm -f "${ED}"/usr/share/man/man1/{dig,host,nslookup,delv,nsupdate}.1* || die
-#	rm -f "${ED}"/usr/share/man/man8/nsupdate.8* || die
-#	rm -f "${ED}"/usr/bin/{dig,host,nslookup,nsupdate,delv} || die
-#	rm -f "${ED}"/usr/sbin/{dig,host,nslookup,nsupdate} || die
-#	for tool in dsfromkey importkey keyfromlabel keygen \
-#	revoke settime signzone verify; do
-#		rm -f "${ED}"/usr/{,s}bin/dnssec-"${tool}" || die
-#		rm -f "${ED}"/usr/share/man/man8/dnssec-"${tool}".8* || die
-#	done
+	rm -f "${ED}"/usr/share/man/man1/{dig,host,nslookup,delv,nsupdate}.1* || die
+	rm -f "${ED}"/usr/share/man/man8/nsupdate.8* || die
+	rm -f "${ED}"/usr/bin/{dig,host,nslookup,nsupdate} || die
+	rm -f "${ED}"/usr/sbin/{dig,host,nslookup,nsupdate} || die
+	for tool in dsfromkey importkey keyfromlabel keygen \
+	revoke settime signzone verify; do
+		rm -f "${ED}"/usr/{,s}bin/dnssec-"${tool}" || die
+		rm -f "${ED}"/usr/share/man/man8/dnssec-"${tool}".8* || die
+	done
 
 	# bug 405251, library archives aren't properly handled by --enable/disable-static
 	if ! use static-libs; then
@@ -394,4 +387,3 @@ pkg_config() {
 	elog "You may need to add the following line to your syslog-ng.conf:"
 	elog "source jail { unix-stream(\"${CHROOT}/dev/log\"); };"
 }
-
