@@ -12,9 +12,9 @@ dev-python/tldextract 3.1.0: Accurately separate the TLD from the registered dom
 kde-plasma/plasma-bigscreen 9999: KDE Plasma Big Screen Launcher
 kde-plasma/plasma-nano 9999: KDE Plasma Minimal shell package
 media-sound/mumble 9999: Mumble is an open source, low-latency, high quality voice chat software
-net-dns/bind 9.16.16 9.16.18 9.17.13 9.17.15: Berkeley Internet Name Domain - Name Server
+net-dns/bind 9.16.18 9.16.19 9.17.15 9.17.16: Berkeley Internet Name Domain - Name Server
 net-dns/bind-adblock 9999: Fetch various blocklists and generate a BIND zone from them.
-net-dns/bind-tools 9.16.16 9.16.18: bind tools: dig, nslookup, host, nsupdate, dnssec-keygen
+net-dns/bind-tools 9.16.18 9.16.19: bind tools: dig, nslookup, host, nsupdate, dnssec-keygen
 net-misc/ena-driver 2.2.7: Amazon EC2 Elastic Network Adapter (ENA) kernel driver
 sys-boot/raspberrypi-firmware 1.20210430 1.20210527: Raspberry Pi (all versions) bootloader and GPU firmware
 sys-kernel/modprobed-db 2.44: This utility tracks modules loaded by the kernel, for localmodconfig
