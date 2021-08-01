@@ -123,9 +123,9 @@ pkg_pretend() {
 
 src_configure() {
 
-local emesonargs=(
-	-Dbuild-test=true
-	)
+#local emesonargs=(
+#	-Dbuild-test=true
+#	)
 	meson_src_configure
 	# Most open-source packages use GNU autoconf for configuration.
 	# The default, quickest (and preferred) way of running configure is:
@@ -187,9 +187,9 @@ src_install() {
 	#	install
 	# Again, verify the Makefiles!  We don't want anything falling
 	# outside of ${D}.
-for x in `ls ${EPREFIX}/usr/lib/wsl/lib/`; do
-true
+#for x in `ls ${EPREFIX}/usr/lib/wsl/lib/`; do
+#true
 #	dosym "../lib/wsl/lib/$x" "${EPREFIX}/usr/lib64/$x"
-done
+#done
 meson_src_install
 }
