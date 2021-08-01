@@ -109,10 +109,22 @@ IUSE=""
 
 # The following src_configure function is implemented as default by portage, so
 # you only need to call it if you need a different behaviour.
+
+
+pkg_pretend() {
+	if ! grep 'LDPATH="/usr/lib/wsl/lib"' -qr "${ROOT}/etc/env.d"; then
+		eerror "Please create a file in /etc/env.d/ containing the following:"
+		eerror 'LDPATH="/usr/lib/wsl/lib"'
+		eerror 'LIBPATH="/usr/lib/wsl/lib"'
+		einfo 'so that the libraries wsl mounts at that unusual location are found correctly'
+		die
+	fi
+}
+
 src_configure() {
 
 local emesonargs=(
-	-Dbuild-test=false
+	-Dbuild-test=true
 	)
 	meson_src_configure
 	# Most open-source packages use GNU autoconf for configuration.
@@ -176,7 +188,8 @@ src_install() {
 	# Again, verify the Makefiles!  We don't want anything falling
 	# outside of ${D}.
 for x in `ls ${EPREFIX}/usr/lib/wsl/lib/`; do
-	dosym "../lib/wsl/lib/$x" "${EPREFIX}/usr/lib64/$x"
+true
+#	dosym "../lib/wsl/lib/$x" "${EPREFIX}/usr/lib64/$x"
 done
 meson_src_install
 }
