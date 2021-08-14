@@ -51,6 +51,7 @@ COMMON_DEPEND="
 	>=kde-frameworks/kwayland-${KFMIN}:5
 	>=kde-frameworks/kwindowsystem-${KFMIN}:5
 	>=kde-frameworks/plasma-${KFMIN}:5
+	>=kde-plasma/libkworkspace-5.21:5
 "
 DEPEND="${COMMON_DEPEND}
 "
