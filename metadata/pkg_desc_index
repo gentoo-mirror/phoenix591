@@ -17,7 +17,7 @@ media-libs/directx-headers 9999: DirectX headers for WSL 2 graphics
 media-libs/mesa 21.2.2 21.2.5 9999: OpenGL-like graphic library for Linux
 media-libs/raspberrypi-userland 9999: Raspberry Pi userspace tools and libraries
 media-sound/mumble 9999: Mumble is an open source, low-latency, high quality voice chat software
-net-dns/bind 9.17.15 9.17.16 9.17.18: Berkeley Internet Name Domain - Name Server
+net-dns/bind 9.17.19: Berkeley Internet Name Domain - Name Server
 net-dns/bind-adblock 9999: Fetch various blocklists and generate a BIND zone from them.
 net-dns/bind-tools 9.16.18 9.16.19: bind tools: dig, nslookup, host, nsupdate, dnssec-keygen
 sys-boot/raspberrypi-firmware 1.20210430 1.20210527: Raspberry Pi (all versions) bootloader and GPU firmware
