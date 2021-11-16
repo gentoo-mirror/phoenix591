@@ -40,8 +40,6 @@ media-libs/mesa:zink - Enable the Zink OpenGL-over-Vulkan Gallium driver
 media-sound/mumble:g15 - Enable support for the Logitech G15 LCD (and compatible devices).
 media-sound/mumble:rnnoise - Enable alternative noise suppression option based on RNNoise.
 media-sound/mumble:speech - Enable text-to-speech support in Mumble.
-net-dns/bind:dlz - Enables dynamic loaded zones, 3rd party extension
-net-dns/bind:dnsrps - Enable the DNS Response Policy Service (DNSRPS) API, a mechanism to allow an external response policy provider
 net-dns/bind:dnstap - Enables dnstap packet logging
 net-dns/bind:fixed-rrset - Enables fixed rrset-order option
 net-dns/bind:geoip2 - Enable GeoIP2 API from MaxMind
