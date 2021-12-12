@@ -1,20 +1,17 @@
-app-crypt/certbot-dns-cloudflare 1.20.0 1.21.0: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
+app-crypt/certbot-dns-cloudflare 1.21.0 1.22.0: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
 app-emulation/vmware-modules 16.1.2-r1 16.1.2-r2: VMware kernel modules
 app-emulation/vmware-player 16.1.2.17966106-r3: Emulate a complete PC without the performance overhead of most emulators
 app-emulation/wine-mono 6.1.1: Wine Mono is a replacement for the .NET runtime and class libraries in Wine
 dev-embedded/rpi-eeprom 2021.04.29 9999: Updater for Raspberry Pi 4 bootloader and the VL805 USB controller
 dev-python/cloudflare 2.8.15: Python wrapper for the Cloudflare v4 API
-dev-python/dns-lexicon 3.6.1 3.7.0: Manipulate DNS records on various DNS providers in a standardized/agnostic way
-dev-python/jsonlines 2.0.0 9999: Library with helpers for the jsonlines file format
+dev-python/jsonlines 2.0.0 3.0.0 9999: Library with helpers for the jsonlines file format
 dev-python/mycroft-core 9999: Voice command core
-dev-python/pyinotify 0.9.6: Python module used for monitoring filesystems events
-dev-python/requests-file 1.5.1: File transport adapter for Requests
-dev-python/tldextract 3.1.0 3.1.2: Accurately separate the TLD from the registered domain and subdomains of a URL.
+dev-python/tldextract 3.1.2: Accurately separate the TLD from the registered domain and subdomains of a URL.
 games-util/pyfa 2.38.1-r1 9999: Python Fitting Assistant - a ship fitting application for EVE Online
 kde-plasma/plasma-bigscreen 9999: KDE Plasma Big Screen Launcher
 kde-plasma/plasma-nano 9999: KDE Plasma Minimal shell package
 media-libs/directx-headers 1.4.9 9999: DirectX headers for WSL 2 graphics
-media-libs/mesa 21.2.5 21.3.0 9999: OpenGL-like graphic library for Linux
+media-libs/mesa 21.3.1-r1 9999: OpenGL-like graphic library for Linux
 media-libs/raspberrypi-userland 9999: Raspberry Pi userspace tools and libraries
 media-sound/mumble 9999: Mumble is an open source, low-latency, high quality voice chat software
 net-dns/bind 9.17.20: Berkeley Internet Name Domain - Name Server
