@@ -1,13 +1,12 @@
 app-crypt/certbot-dns-cloudflare 1.21.0 1.22.0: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
 app-emulation/vmware-modules 16.1.2-r1 16.1.2-r2: VMware kernel modules
 app-emulation/vmware-player 16.1.2.17966106-r3: Emulate a complete PC without the performance overhead of most emulators
-app-emulation/wine-mono 6.1.1: Wine Mono is a replacement for the .NET runtime and class libraries in Wine
 dev-embedded/rpi-eeprom 2021.04.29 9999: Updater for Raspberry Pi 4 bootloader and the VL805 USB controller
 dev-python/cloudflare 2.8.15: Python wrapper for the Cloudflare v4 API
 dev-python/jsonlines 2.0.0 3.0.0 9999: Library with helpers for the jsonlines file format
 dev-python/mycroft-core 9999: Voice command core
 dev-python/tldextract 3.1.2: Accurately separate the TLD from the registered domain and subdomains of a URL.
-games-util/pyfa 2.38.1-r1 9999: Python Fitting Assistant - a ship fitting application for EVE Online
+games-util/pyfa 2.38.1-r1 2.39.1 9999: Python Fitting Assistant - a ship fitting application for EVE Online
 kde-plasma/plasma-bigscreen 9999: KDE Plasma Big Screen Launcher
 kde-plasma/plasma-nano 9999: KDE Plasma Minimal shell package
 media-libs/directx-headers 1.4.9 9999: DirectX headers for WSL 2 graphics
