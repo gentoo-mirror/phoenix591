@@ -8,7 +8,7 @@ dev-python/jsonlines 3.0.0 9999: Library with helpers for the jsonlines file for
 dev-python/mycroft-core 9999: Voice command core
 dev-python/tldextract 3.1.2: Accurately separate the TLD from the registered domain and subdomains of a URL.
 games-util/goverlay 0.7.1 9999: GOverlay is an opensource project that aims to create a Graphical UI to help manage Linux overlays.
-games-util/pyfa 2.39.3 9999: Python Fitting Assistant - a ship fitting application for EVE Online
+games-util/pyfa 2.39.3 2.40.0 9999: Python Fitting Assistant - a ship fitting application for EVE Online
 kde-plasma/plasma-bigscreen 9999: KDE Plasma Big Screen Launcher
 kde-plasma/plasma-nano 9999: KDE Plasma Minimal shell package
 media-libs/directx-headers 1.4.9 9999: DirectX headers for WSL 2 graphics
