@@ -38,6 +38,9 @@ pkg_pretend() {
 	use amd64 || die "Sorry, this binary package is only available on amd64"
 }
 
+pkg_setup() {
+	use server && python-single-r1_pkg_setup
+}
 src_install() {
 	dodir /
 	if use server; then
