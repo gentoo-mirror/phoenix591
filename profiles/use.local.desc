@@ -17,6 +17,7 @@ app-emulation/vmware-player:vmware-tools-solaris - Install VMware Tools for Sola
 app-emulation/vmware-player:vmware-tools-winPre2k - Install VMware Tools for Windows (before 2000) guests.
 app-emulation/vmware-player:vmware-tools-winPreVista - Install VMware Tools for Windows (after 2000, before Vista) guests.
 app-emulation/vmware-player:vmware-tools-windows - Install VMware Tools for Windows (Vista and later) guests.
+dev-db/foundationdb-bin:server - Installs the database server and not just the client tools
 games-util/goverlay:opengl - Use x11-apps/mesa-progs for opengl preview.
 games-util/goverlay:vulkan - Use dev-util/vulkan-tools for vulkan preview.
 kde-plasma/plasma-bigscreen:mycroft - Uses dev-python/mycroft-core for voice skills.
