@@ -5,7 +5,7 @@ EAPI=8
 PYTHON_COMPAT=( python3_{9,10,11} )
 inherit unpacker python-single-r1 systemd
 
-DESCRIPTION="The web browser from Google"
+DESCRIPTION="FoundationDB is a distributed database designed to handle large volumes of structured data across clusters"
 HOMEPAGE="https://www.foundationdb.org/"
 
 MY_PN="foundationdb"
