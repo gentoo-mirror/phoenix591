@@ -1,6 +1,6 @@
 acct-group/foundationdb 0: System group: foundationdb
 acct-user/foundationdb 0: System user: foundationdb
-app-crypt/certbot-dns-cloudflare 1.27.0 1.28.0 1.29.0: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
+app-crypt/certbot-dns-cloudflare 1.27.0 1.28.0 1.29.0 1.30.0: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
 app-emulation/vmware-modules 16.1.2-r1 16.1.2-r2 16.2.1: VMware kernel modules
 app-emulation/vmware-player 16.1.2.17966106-r3: Emulate a complete PC without the performance overhead of most emulators
 dev-db/foundationdb-bin 6.3.24: FoundationDB is a distributed database designed to handle large volumes of structured data across clusters
