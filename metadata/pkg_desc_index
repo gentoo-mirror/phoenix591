@@ -1,7 +1,6 @@
 acct-group/foundationdb 0: System group: foundationdb
 acct-user/foundationdb 0: System user: foundationdb
 app-crypt/certbot-dns-cloudflare 1.30.0-r2 1.31.0: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
-app-emulation/vmware-modules 16.1.2-r1 16.1.2-r2 16.2.1: VMware kernel modules
 app-emulation/vmware-player 16.1.2.17966106-r3: Emulate a complete PC without the performance overhead of most emulators
 dev-db/foundationdb-bin 6.3.24: FoundationDB is a distributed database designed to handle large volumes of structured data across clusters
 dev-embedded/rpi-eeprom 2021.04.29 2022.04.26 9999: Updater for Raspberry Pi 4 bootloader and the VL805 USB controller
