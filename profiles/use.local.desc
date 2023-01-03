@@ -20,7 +20,6 @@ app-emulation/vmware-player:vmware-tools-windows - Install VMware Tools for Wind
 dev-db/foundationdb-bin:server - Installs the database server and not just the client tools
 games-util/goverlay:opengl - Use x11-apps/mesa-progs for opengl preview.
 games-util/goverlay:vulkan - Use dev-util/vulkan-tools for vulkan preview.
-kde-plasma/plasma-bigscreen:mycroft - Uses dev-python/mycroft-core for voice skills.
 media-libs/mesa:classic - Build drivers based on the classic architecture.
 media-libs/mesa:d3d9 - Enable Direct 3D9 API through Nine state tracker. Can be used together with patched wine.
 media-libs/mesa:dri3 - Enable DRI3 support.
