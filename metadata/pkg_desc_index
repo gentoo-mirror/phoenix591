@@ -21,6 +21,6 @@ net-dns/bind-adblock 9999: Fetch various blocklists and generate a BIND zone fro
 net-misc/geoipsets 2.3.4: Utility to generate country-specific network ranges
 net-voip/mumble 1.4.230 1.4.9999 9999: Mumble is an open source, low-latency, high quality voice chat software
 sys-boot/raspberrypi-firmware 1.20210430 1.20210527 1.20220120: Raspberry Pi (all versions) bootloader and GPU firmware
-sys-fs/e2fsck-static 1.46.5: Standard EXT2/EXT3/EXT4 filesystem utilities
+sys-fs/e2fsck-static 1.46.5 1.46.6: Standard EXT2/EXT3/EXT4 filesystem utilities
 sys-kernel/modprobed-db 2.44: This utility tracks modules loaded by the kernel, for localmodconfig
 sys-libs/libucontext 1.0: libucontext is a library which provides the ucontext.h C API
