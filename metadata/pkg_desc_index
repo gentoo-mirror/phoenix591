@@ -1,13 +1,15 @@
 acct-group/foundationdb 0: System group: foundationdb
 acct-group/vmware 0: System group: vmware
+acct-group/wsdd 0: Group for net-misc/wsdd
 acct-user/foundationdb 0: System user: foundationdb
-app-crypt/certbot-dns-cloudflare 1.30.0-r2 1.31.0: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
+acct-user/wsdd 0: User for net-misc/wsdd
+app-crypt/certbot-dns-cloudflare 1.31.0 2.3.0: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
 app-emulation/vmware-modules 17.0.0: VMware kernel modules
 app-emulation/vmware-player 16.1.2.17966106-r3: Emulate a complete PC without the performance overhead of most emulators
 dev-db/foundationdb-bin 6.3.24: FoundationDB is a distributed database designed to handle large volumes of structured data across clusters
 dev-embedded/rpi-eeprom 2021.04.29 2022.04.26 9999: Updater for Raspberry Pi 4 bootloader and the VL805 USB controller
 dev-libs/qt5pas 2.6.2: Free Pascal Qt5 bindings library updated by lazarus IDE.
-dev-python/cloudflare 2.8.15 2.9.10 2.10.1 2.10.4: Python wrapper for the Cloudflare v4 API
+dev-python/cloudflare 2.10.4 2.11.1: Python wrapper for the Cloudflare v4 API
 dev-python/jsonlines 3.0.0 3.1.0 9999: Library with helpers for the jsonlines file format
 dev-python/logbook 1.5.3-r1: A logging replacement for Python
 dev-python/mycroft-core 9999: Voice command core
@@ -22,6 +24,7 @@ media-libs/raspberrypi-userland 9999: Raspberry Pi userspace tools and libraries
 net-dns/bind 9.18.10 9.18.11 9.18.12: Berkeley Internet Name Domain - Name Server
 net-dns/bind-adblock 9999: Fetch various blocklists and generate a BIND zone from them.
 net-misc/geoipsets 2.3.4: Utility to generate country-specific network ranges
+net-misc/wsdd 9999: A Web Service Discovery host daemon.
 net-voip/mumble 1.4.230 1.4.9999 9999: Mumble is an open source, low-latency, high quality voice chat software
 sys-boot/raspberrypi-firmware 1.20210430 1.20210527 1.20220120: Raspberry Pi (all versions) bootloader and GPU firmware
 sys-fs/e2fsck-static 1.46.5 1.46.6 1.47.0: Standard EXT2/EXT3/EXT4 filesystem utilities

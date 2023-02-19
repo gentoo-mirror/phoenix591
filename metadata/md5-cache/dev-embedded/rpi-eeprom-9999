@@ -1,16 +1,16 @@
 BDEPEND=sys-apps/help2man virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=install postinst prepare unpack
-DEPEND=python_targets_python3_9? ( >=dev-lang/python-3.9.16-r1:3.9 ) python_targets_python3_10? ( >=dev-lang/python-3.10.9-r1:3.10 )
+DEPEND=python_targets_python3_9? ( >=dev-lang/python-3.9.16-r1:3.9 ) python_targets_python3_10? ( >=dev-lang/python-3.10.9-r1:3.10 ) python_targets_python3_11? ( >=dev-lang/python-3.11.1-r1:3.11 )
 DESCRIPTION=Updater for Raspberry Pi 4 bootloader and the VL805 USB controller
-EAPI=7
+EAPI=8
 HOMEPAGE=https://github.com/raspberrypi/rpi-eeprom/
 INHERIT=python-r1 systemd git-r3
-IUSE=python_targets_python3_9 python_targets_python3_10
+IUSE=python_targets_python3_9 python_targets_python3_10 python_targets_python3_11
 LICENSE=BSD rpi-eeprom
 PROPERTIES=live
-RDEPEND=python_targets_python3_9? ( >=dev-lang/python-3.9.16-r1:3.9 ) python_targets_python3_10? ( >=dev-lang/python-3.10.9-r1:3.10 ) || ( >=media-libs/raspberrypi-userland-0_pre20201022 >=media-libs/raspberrypi-userland-bin-1.20201022 ) dev-libs/openssl
-REQUIRED_USE=|| ( python_targets_python3_9 python_targets_python3_10 )
+RDEPEND=python_targets_python3_9? ( >=dev-lang/python-3.9.16-r1:3.9 ) python_targets_python3_10? ( >=dev-lang/python-3.10.9-r1:3.10 ) python_targets_python3_11? ( >=dev-lang/python-3.11.1-r1:3.11 ) || ( >=media-libs/raspberrypi-userland-0_pre20201022 >=media-libs/raspberrypi-userland-bin-1.20201022 ) dev-libs/openssl
+REQUIRED_USE=|| ( python_targets_python3_9 python_targets_python3_10 python_targets_python3_11 )
 RESTRICT=mirror
 SLOT=0
-_eclasses_=out-of-source-utils	1a9007554652a6e627edbccb3c25a439	multibuild	bddcb51b74f4a76724ff7cf8e7388869	eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	6001248ef162a5fa2a21ce132a212f6b	multilib	5ca4e49abed8e3a2f7b56920eadee157	python-utils-r1	429bfd4e8d8e39db5385ba5744f30788	python-r1	666be58f658d6b32affe30f80e39a49e	systemd	5f4bb0758df2e483babf68cd517078ca	git-r3	2347f8fe2d392b2a091191f94be37e6f
-_md5_=c9ef2e3f91da0ea474c3e8ac2c76923c
+_eclasses_=out-of-source-utils	1a9007554652a6e627edbccb3c25a439	multibuild	bddcb51b74f4a76724ff7cf8e7388869	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	6001248ef162a5fa2a21ce132a212f6b	multilib	5ca4e49abed8e3a2f7b56920eadee157	python-utils-r1	429bfd4e8d8e39db5385ba5744f30788	python-r1	666be58f658d6b32affe30f80e39a49e	systemd	5f4bb0758df2e483babf68cd517078ca	git-r3	2347f8fe2d392b2a091191f94be37e6f
+_md5_=15844ba9e8d15cdae2ae49b570ab27f2
