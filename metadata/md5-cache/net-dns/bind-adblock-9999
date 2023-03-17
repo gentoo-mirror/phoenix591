@@ -8,5 +8,5 @@ LICENSE=MIT
 PROPERTIES=live
 RDEPEND=dev-python/pycryptodome dev-python/dnspython dev-python/requests dev-python/pyyaml dev-python/validators
 SLOT=0
-_eclasses_=git-r3	2347f8fe2d392b2a091191f94be37e6f
+_eclasses_=git-r3	c57c50c922e121043788de0b40ada60a
 _md5_=70e0037863bd0d74a7a0af2a6f4b4b68
