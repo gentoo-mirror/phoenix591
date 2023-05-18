@@ -12,7 +12,7 @@ dev-libs/qt5pas 2.6.2: Free Pascal Qt5 bindings library updated by lazarus IDE.
 dev-python/cloudflare 2.10.4 2.11.1: Python wrapper for the Cloudflare v4 API
 dev-python/jsonlines 3.0.0 3.1.0 9999: Library with helpers for the jsonlines file format
 dev-python/logbook 1.5.3-r1: A logging replacement for Python
-dev-vcs/trufflehog 3.33.0 3.34.0: Find credentials all over the place
+dev-vcs/trufflehog 3.34.0 3.35.0: Find credentials all over the place
 games-emulation/rpcs3 9999: PS3 emulator and debugger.
 games-util/goverlay 0.7.1 0.8.1 9999: GOverlay is an opensource project that aims to create a Graphical UI to help manage Linux overlays.
 games-util/libray 0.0.9: an application for extracting, repackaging, and en/decrypting PS3 ISOs
