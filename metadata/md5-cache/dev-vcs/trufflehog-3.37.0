@@ -8,6 +8,6 @@ KEYWORDS=~amd64 ~arm64
 LICENSE=AGPL-3
 RESTRICT=strip
 SLOT=0
-SRC_URI=https://github.com/trufflesecurity/trufflehog/archive/refs/tags/v3.35.0.tar.gz -> trufflehog-3.35.0.tar.gz https://github.com/Phoenix591/trufflehog/releases/download/3.35.0/trufflehog-3.35.0-vendor.tar.xz
+SRC_URI=https://github.com/trufflesecurity/trufflehog/archive/refs/tags/v3.37.0.tar.gz -> trufflehog-3.37.0.tar.gz https://github.com/Phoenix591/trufflehog/releases/download/3.37.0/trufflehog-3.37.0-vendor.tar.xz
 _eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	14a8ae365191b518fad51caad7a08f3e	multilib	c19072c3cd7ac5cb21de013f7e9832e0	go-module	9c75e51a48520b2f01471c1f91762882
 _md5_=1d77c53d830e5da10a0c8d6244c8a519
