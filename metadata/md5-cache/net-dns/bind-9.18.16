@@ -2,7 +2,7 @@ BDEPEND=test? ( dev-util/cmocka dev-perl/Net-DNS dev-perl/IO-Socket-INET6 net-li
 DEFINED_PHASES=compile config configure install postinst prepare setup
 DEPEND=acct-group/named acct-user/named net-libs/nghttp2:= dev-libs/openssl:=[-bindist(-)] caps? ( >=sys-libs/libcap-2.1.0 ) jemalloc? ( >=dev-libs/jemalloc-5.2.1:= ) xml? ( dev-libs/libxml2 ) geoip? ( dev-libs/libmaxminddb ) geoip2? ( dev-libs/libmaxminddb ) gssapi? ( virtual/krb5 ) json? ( dev-libs/json-c:= ) lmdb? ( dev-db/lmdb ) zlib? ( sys-libs/zlib ) dnstap? ( dev-libs/fstrm dev-libs/protobuf-c ) >=dev-libs/libuv-1.40.0:=
 DESCRIPTION=Berkeley Internet Name Domain - Name Server
-EAPI=7
+EAPI=8
 HOMEPAGE=https://www.isc.org/software/bind
 INHERIT=autotools toolchain-funcs systemd tmpfiles python-any-r1
 IUSE=+caps dnstap doc fixed-rrset geoip geoip2 gssapi +jemalloc json lmdb selinux static-libs test urandom xml +zlib
@@ -11,6 +11,6 @@ LICENSE=Apache-2.0 BSD BSD-2 GPL-2 HPND ISC MPL-2.0
 RDEPEND=acct-group/named acct-user/named net-libs/nghttp2:= dev-libs/openssl:=[-bindist(-)] caps? ( >=sys-libs/libcap-2.1.0 ) jemalloc? ( >=dev-libs/jemalloc-5.2.1:= ) xml? ( dev-libs/libxml2 ) geoip? ( dev-libs/libmaxminddb ) geoip2? ( dev-libs/libmaxminddb ) gssapi? ( virtual/krb5 ) json? ( dev-libs/json-c:= ) lmdb? ( dev-db/lmdb ) zlib? ( sys-libs/zlib ) dnstap? ( dev-libs/fstrm dev-libs/protobuf-c ) >=dev-libs/libuv-1.40.0:= selinux? ( sec-policy/selinux-bind ) sys-process/psmisc !net-dns/bind-tools virtual/tmpfiles
 RESTRICT=test
 SLOT=0
-SRC_URI=https://downloads.isc.org/isc/bind9/9.18.14/bind-9.18.14.tar.xz doc? ( mirror://gentoo/dyndns-samples.tbz2 )
-_eclasses_=gnuconfig	b6b3e92f8b8c996400074b5f61a59256	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	libtool	9d3a9a889a6fa62ae794f817c156491b	autotools	6ae9a4347149b19a112caa1182d03bde	systemd	5f4bb0758df2e483babf68cd517078ca	tmpfiles	216aa76c3a6fcb5d893c23a0de86048f	eapi8-dosym	5ac4857ad078256d939c44f7c64197a9	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	python-utils-r1	a34d5f83235297b76d71eaf8deb53768	python-any-r1	d2955aaac8daaaa69fcc6dc93ed19f29
-_md5_=9b49254b7b4772ee35fe71e96ddea8da
+SRC_URI=https://downloads.isc.org/isc/bind9/9.18.16/bind-9.18.16.tar.xz doc? ( mirror://gentoo/dyndns-samples.tbz2 )
+_eclasses_=gnuconfig	b6b3e92f8b8c996400074b5f61a59256	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	libtool	9d3a9a889a6fa62ae794f817c156491b	autotools	6ae9a4347149b19a112caa1182d03bde	systemd	5f4bb0758df2e483babf68cd517078ca	tmpfiles	216aa76c3a6fcb5d893c23a0de86048f	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	python-utils-r1	a34d5f83235297b76d71eaf8deb53768	python-any-r1	d2955aaac8daaaa69fcc6dc93ed19f29
+_md5_=33c4cc7559ff37e4a8d662ff1d8d700d
