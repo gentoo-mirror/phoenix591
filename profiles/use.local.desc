@@ -34,3 +34,4 @@ net-voip/mumble:system-json - Use the system nlohmann_json library instead of th
 net-voip/mumble:system-ms-gsl - Use the system library instead of the bundled version.
 net-voip/mumble:system-rnnoise - Use the system dev-cpp/ms-gsl instead of the bundled version.
 sys-fs/e2fsck-static:lto - Build with link time optimization (LTO)
+www-servers/lemmy-server:pict-rs - Enables the embedding of pict-rs for image hosting
