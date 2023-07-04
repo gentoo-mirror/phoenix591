@@ -27,4 +27,4 @@ sys-boot/raspberrypi-firmware 1.20210430 1.20210527 1.20220120: Raspberry Pi (al
 sys-fs/e2fsck-static 1.46.5 1.46.6 1.47.0: Standard EXT2/EXT3/EXT4 filesystem utilities
 sys-kernel/modprobed-db 2.44: This utility tracks modules loaded by the kernel, for localmodconfig
 sys-libs/libucontext 1.0: libucontext is a library which provides the ucontext.h C API
-www-servers/lemmy-server 0.18.0: A link aggregator for the fediverse
+www-servers/lemmy-server 0.18.0 0.18.1_rc9: A link aggregator for the fediverse
