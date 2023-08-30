@@ -60,7 +60,6 @@ RDEPEND="
 	gnome-base/dconf
 	media-gfx/graphite2
 	media-libs/alsa-lib
-	media-libs/libart_lgpl
 	media-libs/libvorbis
 	media-libs/mesa
 	media-plugins/alsa-plugins[speex]
@@ -212,7 +211,6 @@ src_install() {
 	# Hardcoded EULA path. We need to disable the default compression.
 #	insinto /usr/share/doc/vmware-player
 	dodoc vmware-player/doc/EULA
-	docompress -x /usr/share/doc/vmware-player
 	# always needed
 	insinto /usr/lib/vmware-ovftool
 	doins vmware-ovftool/vmware.eula
