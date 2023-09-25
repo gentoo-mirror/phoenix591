@@ -7,6 +7,7 @@ app-crypt/certbot-dns-cloudflare 1.31.0 2.3.0: Cloudflare DNS Authenticator plug
 app-emulation/vmware-modules 17.0.1 17.0.2: VMware kernel modules
 app-emulation/vmware-player 17.0.2.21581411: Emulate a complete PC without the performance overhead of most emulators
 dev-db/foundationdb-bin 6.3.24: FoundationDB is a distributed database designed to handle large volumes of structured data across clusters
+dev-db/postgresql 15.4 15.4-r1: PostgreSQL RDBMS
 dev-embedded/rpi-eeprom 2021.04.29 2022.04.26 9999: Updater for Raspberry Pi 4 bootloader and the VL805 USB controller
 dev-libs/qt5pas 2.6.2: Free Pascal Qt5 bindings library updated by lazarus IDE.
 dev-python/cloudflare 2.11.1 2.12.4: Python wrapper for the Cloudflare v4 API
