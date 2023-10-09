@@ -4,7 +4,7 @@ acct-group/wsdd 0: Group for net-misc/wsdd
 acct-user/foundationdb 0: System user: foundationdb
 acct-user/wsdd 0: User for net-misc/wsdd
 app-crypt/certbot-dns-cloudflare 1.31.0 2.3.0: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
-app-emulation/vmware-modules 17.0.1 17.0.2: VMware kernel modules
+app-emulation/vmware-modules 17.0.1 17.0.2-r1: VMware kernel modules
 app-emulation/vmware-player 17.0.2.21581411: Emulate a complete PC without the performance overhead of most emulators
 dev-db/foundationdb-bin 6.3.24: FoundationDB is a distributed database designed to handle large volumes of structured data across clusters
 dev-db/postgresql 15.4 15.4-r1: PostgreSQL RDBMS
