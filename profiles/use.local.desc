@@ -7,7 +7,6 @@ app-emulation/vmware-modules:workstation - Build the workstation version of the 
 app-emulation/vmware-player:macos-guests - Support macOS guests.
 app-emulation/vmware-player:modules - Install app-emulation/vmware-modules in order to run VMs locally.
 app-emulation/vmware-player:ovftool - Install OVF tool.
-app-emulation/vmware-player:vix - Install VIX. The VIX API allows you to write programs and scripts that automate virtual machine operations, and run programs or manipulate files within guest operating systems.
 app-emulation/vmware-player:vmware-tools-darwin - Install VMware Tools for OS X (El Capitan and later) guests.
 app-emulation/vmware-player:vmware-tools-darwinPre15 - Install VMware Tools for OS X (up to Yosemite) guests.
 app-emulation/vmware-player:vmware-tools-linux - Install VMware Tools for Linux guests.
