@@ -2,7 +2,6 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<upstream>
-		<remote-id type="github">wbolster/jsonlines</remote-id>
-		<remote-id type="pypi">jsonlines</remote-id>
+		<remote-id type="github">trufflesecurity/trufflehog</remote-id>
 	</upstream>
 </pkgmetadata>
