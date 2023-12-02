@@ -4,12 +4,12 @@ acct-group/wsdd 0: Group for net-misc/wsdd
 acct-user/foundationdb 0: System user: foundationdb
 acct-user/lemmy 0: User for www-servers/lemmy
 acct-user/wsdd 0: User for net-misc/wsdd
-app-crypt/certbot-dns-cloudflare 2.3.0 2.7.2: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
+app-crypt/certbot-dns-cloudflare 2.7.2: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
 dev-embedded/rpi-eeprom 9999: Updater for Raspberry Pi 4 bootloader and the VL805 USB controller
 dev-embedded/rpi-utils 9999: Misc useful commands for Raspberry Pis
 dev-python/cloudflare 2.14.2: Python wrapper for the Cloudflare v4 API
 dev-python/jsonlines 4.0.0 9999: Library with helpers for the jsonlines file format
-dev-vcs/trufflehog 3.61.0 3.63.1: Find credentials all over the place
+dev-vcs/trufflehog 3.63.1: Find credentials all over the place
 games-emulation/rpcs3 9999: PS3 emulator and debugger.
 games-util/libray 0.0.9: an application for extracting, repackaging, and en/decrypting PS3 ISOs
 media-libs/raspberrypi-userland 9999: Raspberry Pi userspace tools and libraries
