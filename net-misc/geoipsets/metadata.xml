@@ -2,6 +2,6 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<upstream>
-		<remote-id type="github">graysky2/modprobed-db</remote-id>
+		<remote-id type="github">chr0mag/geoipsets</remote-id>
 	</upstream>
 </pkgmetadata>

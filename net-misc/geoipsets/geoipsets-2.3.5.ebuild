@@ -1,18 +1,18 @@
-# Copyright 2022 Gentoo Authors
+# Copyright 2022-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 DISTUTILS_USE_PEP517="setuptools"
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 inherit distutils-r1 systemd
 
 DESCRIPTION="Utility to generate country-specific network ranges"
 HOMEPAGE="https://pypi.org/project/geoipsets/"
 #SRC_URI="https://files.pythonhosted.org/packages/90/cd/0beacbcfdf9b3af9e7c615cb3dba7ec4be1030d4b283e3c9717e3fd9af3c/jsonlines-1.2.0.tar.gz"
 if [[ ${PV} == "9999" ]] ; then
-	inherit git-r3
 	EGIT_REPO_URI="https://github.com/chr0mag/geoipsets"
+	inherit git-r3
 else
 	KEYWORDS="~amd64 ~arm64 ~x86"
 #	tests not distributed through pypi mirror
@@ -25,7 +25,6 @@ IUSE="test"
 RESTRICT="mirror" #overlay, no real issue
 
 DEPEND=""
-#todo 12-11-21 double check these rdeps since they arnt mentioned in doc
 RDEPEND=( "${DEPEND}"
 	"dev-python/requests[${PYTHON_USEDEP}]"
 	"dev-python/beautifulsoup4[${PYTHON_USEDEP}]"
@@ -36,7 +35,7 @@ BDEPEND="(
 	)"
 
 distutils_enable_tests pytest
-RESTRICT="test" # broken/outdated upstream, fails 5 tests
+#RESTRICT="test" # broken/outdated upstream, fails 5 tests
 
 S="${WORKDIR}/${P}/python"
 
@@ -48,3 +47,12 @@ src_install() {
 	doins ../bash/bcs.conf
 	doins geoipsets.conf
 }
+
+python_test() {
+	local EPYTEST_DESELECT=(
+		#Fails
+		'tests/config_test.py::test_no_cli_opts_no_config_file'
+	)
+	epytest
+}
+
