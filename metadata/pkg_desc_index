@@ -15,6 +15,7 @@ games-util/libray 0.0.9: an application for extracting, repackaging, and en/decr
 media-libs/raspberrypi-userland 9999: Raspberry Pi userspace tools and libraries
 net-dns/bind 9.18.20: Berkeley Internet Name Domain - Name Server
 net-dns/bind-adblock 9999: Fetch various blocklists and generate a BIND zone from them.
+net-misc/gdrive 3.9.0: Google Drive CLI Client
 net-misc/geoipsets 2.3.5: Utility to generate country-specific network ranges
 net-misc/rabbitmq-server 3.12.2: RabbitMQ is a high-performance AMQP-compliant message broker written in Erlang
 net-misc/wsdd 9999: A Web Service Discovery host daemon.
@@ -22,4 +23,4 @@ net-voip/mumble 1.4.230 1.4.9999 9999: Mumble is an open source, low-latency, hi
 perl-gcpan/Image-ExifTool 12.70: Read and write meta information
 sys-fs/e2fsck-static 1.47.0: Standard EXT2/EXT3/EXT4 filesystem utilities
 sys-kernel/modprobed-db 2.46: This utility tracks modules loaded by the kernel, for localmodconfig
-www-servers/lemmy-server 0.18.9999 9999: A link aggregator for the fediverse
+www-servers/lemmy-server 0.18.5 0.18.9999 9999: A link aggregator for the fediverse
