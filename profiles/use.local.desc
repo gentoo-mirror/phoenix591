@@ -16,6 +16,12 @@ net-voip/mumble:system-json - Use the system nlohmann_json library instead of th
 net-voip/mumble:system-ms-gsl - Use the system library instead of the bundled version.
 net-voip/mumble:system-rnnoise - Use the system dev-cpp/ms-gsl instead of the bundled version.
 sys-fs/e2fsck-static:lto - Build with link time optimization (LTO)
+sys-kernel/rpi-kernel:initramfs - Builds an initramfs with Dracut. Untested
+sys-kernel/rpi-kernel:pi1 - Builds the kernel for the Original Pi
+sys-kernel/rpi-kernel:pi2 - Builds the kernel for the Pi 2
+sys-kernel/rpi-kernel:pi3 - Builds the kernel for the Pi 3
+sys-kernel/rpi-kernel:pi4 - Builds the kernel for the Pi 4
+sys-kernel/rpi-kernel:pi5 - Builds the kernel for the Pi 5
 www-servers/lemmy-server:embed-pictrs - Enables the embedding of pict-rs for image hosting
 www-servers/lemmy-server:json-log - Format the log in json
 www-servers/lemmy-server:opentelemetry-console - Enable the opentelemetry console
