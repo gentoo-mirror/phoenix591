@@ -7,9 +7,9 @@ acct-user/wsdd 0: User for net-misc/wsdd
 app-crypt/certbot-dns-cloudflare 2.7.2 2.8.0: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
 dev-embedded/rpi-eeprom 9999: Updater for Raspberry Pi 4 bootloader and the VL805 USB controller
 dev-embedded/rpi-utils 9999: Misc useful commands for Raspberry Pis
-dev-python/cloudflare 2.15.1: Python wrapper for the Cloudflare v4 API
+dev-python/cloudflare 2.16.0: Python wrapper for the Cloudflare v4 API
 dev-python/jsonlines 4.0.0 9999: Library with helpers for the jsonlines file format
-dev-vcs/trufflehog 3.63.5 3.63.8: Find credentials all over the place
+dev-vcs/trufflehog 3.63.5 3.63.8 3.63.10: Find credentials all over the place
 games-emulation/rpcs3 9999: PS3 emulator and debugger.
 games-util/libray 0.0.9: an application for extracting, repackaging, and en/decrypting PS3 ISOs
 media-libs/raspberrypi-userland 9999: Raspberry Pi userspace tools and libraries
