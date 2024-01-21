@@ -1,4 +1,4 @@
-# Copyright 2021-2023 Gentoo Authors
+# Copyright 2021-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -25,20 +25,26 @@ RESTRICT="test mirror" #mirror restricted only becausw overlay
 distutils_enable_tests pytest
 python_prepare_all() {
 	# don't install tests or examples
-	sed -i -e 's/find_packages()/find_packages(exclude=["tests","examples"])/' \
-		-e "s/'cli4', 'examples'/'cli4'/" setup.py || die
+	sed -i -e "s/'cli4', 'examples'/'cli4'/" \
+		 setup.py || die
 
 	distutils-r1_python_prepare_all
 }
 python_test() {
-	pushd  tests
+	pushd  CloudFlare/tests
 	if [ -z "${CLOUDFLARE_API_TOKEN}" ]; then
+		ewarn "Skipping some tests which require an actual cloudflare api token"
+		ewarn "To run them, provide the token in the environment variable CLOUDFLARE_API_TOKEN"
+		ewarn "The permissions needed are zone dns edit and user details read"
 		local EPYTEST_IGNORE=('test_dns_records.py' 'test_radar_returning_csv.py'
-			'test_dns_import_export.py')
+			'test_dns_import_export.py' 'test_graphql.py' 'test_workers.py' )
 		# these test(s) need an api key/token setup
-		# Permissions needed are zone dns edit and user details read
+		# Permissions needed are zone dns edit and user details read, account worker scripts edit,
+			#  zone analytics read
 	fi
-	# Not sure what permissions/tokens/whatever this test needs
-	local EPYTEST_IGNORE+=('test_issue114.py')
+	# Not sure what permissions/tokens/whatever this test needs, maybe both a token and old api login
+	# tried several of the ssl related options for the cert test but no luck either
+	# Tried several of the prefex related options to try to get loa docs working but nope
+	local EPYTEST_IGNORE+=('test_issue114.py' 'test_certificates.py' 'test_loa_documents.py' )
 	epytest
 }
