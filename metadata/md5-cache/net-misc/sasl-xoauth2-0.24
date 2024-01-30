@@ -1,0 +1,17 @@
+BDEPEND=virtual/pkgconfig virtual/pandoc app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install postinst prepare test
+DEPEND=net-misc/curl dev-libs/jsoncpp dev-libs/cyrus-sasl
+DESCRIPTION=Sasl plugin to facilitate oauth2, tested with postfix
+EAPI=8
+HOMEPAGE=https://github.com/tarickb/xoauth2
+INHERIT=python-r1 cmake
+IUSE=test python_targets_python3_10 python_targets_python3_11 python_targets_python3_12
+KEYWORDS=~amd64 ~arm64
+LICENSE=Apache-2.0
+RDEPEND=dev-python/msal[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 )
+REQUIRED_USE=|| ( python_targets_python3_10 python_targets_python3_11 python_targets_python3_12 )
+RESTRICT=!test? ( test ) mirror
+SLOT=0
+SRC_URI=https://github.com/tarickb/sasl-xoauth2/archive/refs/tags/release-0.24.tar.gz -> sasl-xoauth2-0.24.tar.gz
+_eclasses_=out-of-source-utils	1a9007554652a6e627edbccb3c25a439	multibuild	d67e78a235f541871c7dfe4cf7931489	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	042f4cc53680245bf99a84669b94155a	python-r1	8a28fa6d3e3bc96ff8a7eff2badbe71f	flag-o-matic	b2b07efa51009704f88173b2c7feab47	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	c7c9a62d6232cac66d4ea32d575c3e7c
+_md5_=f37fba5d3b93bd6a0a6a5c72b9960048

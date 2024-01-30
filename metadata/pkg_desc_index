@@ -9,6 +9,7 @@ dev-embedded/rpi-eeprom 9999: Updater for Raspberry Pi 4 bootloader and the VL80
 dev-embedded/rpi-utils 9999: Misc useful commands for Raspberry Pis
 dev-python/cloudflare 2.16.0 2.17.0: Python wrapper for the Cloudflare v4 API
 dev-python/jsonlines 4.0.0 9999: Library with helpers for the jsonlines file format
+dev-python/msal 1.26.0: Microsoft Authentication Library for Python allows integration with the Microsoft identity platform
 dev-vcs/trufflehog 3.63.5 3.63.8 3.63.10 3.65.0 3.66.1: Find credentials all over the place
 games-emulation/rpcs3 9999: PS3 emulator and debugger.
 games-util/libray 0.0.9: an application for extracting, repackaging, and en/decrypting PS3 ISOs
@@ -18,6 +19,7 @@ net-dns/bind-adblock 9999: Fetch various blocklists and generate a BIND zone fro
 net-misc/gdrive 3.9.0: Google Drive CLI Client
 net-misc/geoipsets 2.3.5: Utility to generate country-specific network ranges
 net-misc/rabbitmq-server 3.12.2: RabbitMQ is a high-performance AMQP-compliant message broker written in Erlang
+net-misc/sasl-xoauth2 0.24: Sasl plugin to facilitate oauth2, tested with postfix
 net-misc/wsdd 9999: A Web Service Discovery host daemon.
 net-voip/mumble 1.4.230 1.4.9999 9999: Mumble is an open source, low-latency, high quality voice chat software
 perl-gcpan/Image-ExifTool 12.70: Read and write meta information
