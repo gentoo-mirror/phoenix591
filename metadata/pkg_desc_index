@@ -16,7 +16,7 @@ games-util/libray 0.0.9: an application for extracting, repackaging, and en/decr
 media-libs/raspberrypi-userland 9999: Raspberry Pi userspace tools and libraries
 net-dns/bind 9.18.20: Berkeley Internet Name Domain - Name Server
 net-dns/bind-adblock 9999: Fetch various blocklists and generate a BIND zone from them.
-net-misc/gdrive 3.9.0: Google Drive CLI Client
+net-misc/gdrive 3.9.0 3.9.1: Google Drive CLI Client
 net-misc/geoipsets 2.3.5: Utility to generate country-specific network ranges
 net-misc/rabbitmq-server 3.12.2: RabbitMQ is a high-performance AMQP-compliant message broker written in Erlang
 net-misc/sasl-xoauth2 0.24: Sasl plugin to facilitate oauth2, tested with postfix
