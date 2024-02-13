@@ -48,7 +48,7 @@ python_test() {
 	# Not sure what permissions/tokens/whatever this test needs, maybe both a token and old api login
 	# tried several of the ssl related options for the cert test but no luck either
 	# Tried several of the prefex related options to try to get loa docs working but nope
-	local EPYTEST_IGNORE+=('test_issue114.py' 'test_certificates.py' 'test_loa_documents.py'
+	local EPYTEST_IGNORE+=('test_images_v2_direct_upload.py' 'test_issue114.py' 'test_certificates.py' 'test_loa_documents.py'
 		'test_load_balancers.py' 'test_rulesets.py')
 	# maybe needs a paid plan or just some unknown permission
 	local EPYTEST_DESELECT=(
