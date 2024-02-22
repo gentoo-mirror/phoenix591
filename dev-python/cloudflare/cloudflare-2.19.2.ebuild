@@ -26,6 +26,7 @@ distutils_enable_tests pytest
 python_prepare_all() {
 	# don't install tests or examples
 	sed -i -e "s/'cli4', 'examples'/'cli4'/" \
+		-e "s#'CloudFlare/tests',##" \
 		 setup.py || die
 
 	distutils-r1_python_prepare_all
@@ -39,11 +40,12 @@ python_test() {
 		local EPYTEST_IGNORE=('test_dns_records.py' 'test_radar_returning_csv.py'
 			'test_dns_import_export.py' 'test_load_balancers.py' 'test_log_received.py'
 			'test_rulesets.py' 'test_urlscanner.py' 'test_paging_thru_zones.py'
+			'test_purge_cache.py'
 			'test_graphql.py' 'test_waiting_room.py' 'test_workers.py' )
 		# these test(s) need an api key/token setup
 		# Permissions needed are zone dns edit and user details read, account worker scripts edit,
 			#  zone analytics read, zone load balancer edit, account ruleset edit, zone firewall edit
-			# account url scanner edit, zone waiting room edit
+			# account url scanner edit, zone waiting room edit, zone cache purge
 	fi
 	# Not sure what permissions/tokens/whatever this test needs, maybe both a token and old api login
 	# tried several of the ssl related options for the cert test but no luck either
