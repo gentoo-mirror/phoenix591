@@ -18,8 +18,8 @@ else
 fi
 PATCHES=( "${FILESDIR}/dtovl-install.patch" )
 
-SLOT="0"
 LICENSE="BSD"
+SLOT="0"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 RESTRICT="mirror" #overlay
@@ -27,6 +27,7 @@ RESTRICT="mirror" #overlay
 BDEPEND="sys-apps/dtc"
 DEPEND="${PYTHON_DEPS}"
 RDEPEND="${PYTHON_DEPS}
+	app-admin/sudo
 	${DEPEND}"
 src_configure() {
 	filter-lto
