@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # Re dlz/mysql and threads, needs to be verified..
@@ -31,6 +31,8 @@ LICENSE="Apache-2.0 BSD BSD-2 GPL-2 HPND ISC MPL-2.0"
 SLOT="0"
 #KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86"
+S="${WORKDIR}/${MY_P}"
+
 # -berkdb by default re bug 602682
 IUSE="+caps dnstap doc fixed-rrset geoip geoip2 gssapi +jemalloc
 json lmdb selinux static-libs test
@@ -85,7 +87,6 @@ pkg_setup() {
 	use test && python-any-r1_pkg_setup
 	true
 }
-S="${WORKDIR}/${MY_P}"
 
 #PATCHES=(
 #	"${FILESDIR}/ldap-library-path-on-multilib-machines.patch"
