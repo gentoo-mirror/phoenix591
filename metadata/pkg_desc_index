@@ -25,7 +25,7 @@ net-misc/sasl-xoauth2 0.24: Sasl plugin to facilitate oauth2, tested with postfi
 net-misc/wsdd 9999: A Web Service Discovery host daemon.
 net-voip/mumble 1.4.230 1.4.9999 9999: Mumble is an open source, low-latency, high quality voice chat software
 perl-gcpan/Image-ExifTool 12.70: Read and write meta information
-sys-fs/e2fsck-static 1.47.0: Standard EXT2/EXT3/EXT4 filesystem utilities
+sys-fs/e2fsck-static 1.47.0 1.47.1: Standard EXT2/EXT3/EXT4 filesystem utilities
 sys-kernel/modprobed-db 2.46: This utility tracks modules loaded by the kernel, for localmodconfig
 sys-kernel/rpi-kernel 6.1.9999 6.6.9999 6.7.9999: Linux kernel built with Raspberry Pi patches
 www-servers/lemmy-server 0.18.5 0.18.9999 9999: A link aggregator for the fediverse
