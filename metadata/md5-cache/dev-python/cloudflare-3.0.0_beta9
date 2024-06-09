@@ -9,7 +9,7 @@ LICENSE=MIT test? ( ISC Apache-2.0 MIT BSD CC0-1.0 0BSD )
 RDEPEND=>=dev-python/httpx-0.23.0[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] >=dev-python/pydantic-1.9.0[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] >=dev-python/typing-extensions-4.7.0[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] >=dev-python/anyio-4.3.0[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] >=dev-python/distro-1.7.0[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] >=dev-python/sniffio-1.3.1[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 )
 REQUIRED_USE=|| ( python_targets_python3_10 python_targets_python3_11 python_targets_python3_12 )
 RESTRICT=mirror !test? ( test )
-SLOT=0
+SLOT=3
 SRC_URI=https://github.com/cloudflare/cloudflare-python/archive/refs/tags/v3.0.0-beta.9.tar.gz -> cloudflare-3.0.0_beta9.gh.tar.gz test? ( https://github.com/Phoenix591/cloudflare-python/releases/download/v3.0.0_beta9/cloudflare-python-v3.0.0_beta9-prism.tar.gz )
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	d309b9713dfc18e754cba88d3ba69653	out-of-source-utils	1a9007554652a6e627edbccb3c25a439	multibuild	d67e78a235f541871c7dfe4cf7931489	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	8b220bbce5c119fb1d4d5c2f5588f3ea	python-r1	8a28fa6d3e3bc96ff8a7eff2badbe71f	distutils-r1	5400d21736d8621562bf93be4fa98eec
-_md5_=09fb4a673ffb71196da02a23c6e6a3a5
+_md5_=2d83b8aaa4b666fe327f707ba678e8f4
