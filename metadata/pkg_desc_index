@@ -27,5 +27,5 @@ net-voip/mumble 1.4.230 1.4.9999 9999: Mumble is an open source, low-latency, hi
 perl-gcpan/Image-ExifTool 12.70: Read and write meta information
 sys-fs/e2fsck-static 1.47.0 1.47.1: Standard EXT2/EXT3/EXT4 filesystem utilities
 sys-kernel/modprobed-db 2.46: This utility tracks modules loaded by the kernel, for localmodconfig
-sys-kernel/rpi-kernel 6.1.9999 6.6.9999 6.7.9999: Linux kernel built with Raspberry Pi patches
+sys-kernel/rpi-kernel 6.1.9999 6.6.9999 6.9.9999: Linux kernel built with Raspberry Pi patches
 www-servers/lemmy-server 0.18.5 0.18.9999 9999: A link aggregator for the fediverse
