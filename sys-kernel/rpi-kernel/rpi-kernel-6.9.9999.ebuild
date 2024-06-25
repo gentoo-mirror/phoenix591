@@ -39,6 +39,7 @@ QA_FLAGS_IGNORED="
 src_prepare() {
 	default
 	cp "${FILESDIR}/99_pi-rename" "${T}/"
+	sed -i s/README// arch/arm/boot/dts/overlays/Makefile || die
 }
 src_configure() {
 	tc-export_build_env
