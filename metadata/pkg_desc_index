@@ -11,7 +11,7 @@ dev-embedded/rpi-eeprom 9999: Updater for Raspberry Pi 4 bootloader and the VL80
 dev-embedded/rpi-utils 9999: Misc useful commands for Raspberry Pis
 dev-python/cloudflare 2.19.4 2.20.0 3.0.1 9999: Python wrapper for the Cloudflare v4 API
 dev-python/jsonlines 4.0.0 9999: Library with helpers for the jsonlines file format
-dev-python/msal 1.26.0: Microsoft Authentication Library for Python allows integration with the Microsoft identity platform
+dev-python/msal 1.26.0 1.29.0: Microsoft Authentication Library for Python allows integration with Microsoft
 dev-vcs/trufflehog 3.75.1 3.76.3 3.78.2: Find credentials all over the place
 games-emulation/rpcs3 9999: PS3 emulator and debugger.
 games-util/libray 0.0.9: an application for extracting, repackaging, and en/decrypting PS3 ISOs
