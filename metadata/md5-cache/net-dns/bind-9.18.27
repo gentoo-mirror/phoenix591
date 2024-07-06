@@ -3,7 +3,7 @@ DEFINED_PHASES=compile config configure install postinst prepare setup
 DEPEND=acct-group/named acct-user/named net-libs/nghttp2:= dev-libs/openssl:=[-bindist(-)] caps? ( >=sys-libs/libcap-2.1.0 ) jemalloc? ( >=dev-libs/jemalloc-5.2.1:= ) xml? ( dev-libs/libxml2 ) geoip? ( dev-libs/libmaxminddb ) geoip2? ( dev-libs/libmaxminddb ) gssapi? ( virtual/krb5 ) json? ( dev-libs/json-c:= ) lmdb? ( dev-db/lmdb ) zlib? ( sys-libs/zlib ) dnstap? ( dev-libs/fstrm dev-libs/protobuf-c ) >=dev-libs/libuv-1.40.0:=
 DESCRIPTION=Berkeley Internet Name Domain - Name Server
 EAPI=8
-HOMEPAGE=https://www.isc.org/software/bind
+HOMEPAGE=https://www.isc.org/bind/
 INHERIT=autotools toolchain-funcs systemd tmpfiles python-any-r1
 IUSE=+caps dnstap doc fixed-rrset geoip geoip2 gssapi +jemalloc json lmdb selinux static-libs test xml +zlib
 KEYWORDS=~amd64 ~arm ~arm64 ~x86
@@ -11,6 +11,6 @@ LICENSE=Apache-2.0 BSD BSD-2 GPL-2 HPND ISC MPL-2.0
 RDEPEND=acct-group/named acct-user/named net-libs/nghttp2:= dev-libs/openssl:=[-bindist(-)] caps? ( >=sys-libs/libcap-2.1.0 ) jemalloc? ( >=dev-libs/jemalloc-5.2.1:= ) xml? ( dev-libs/libxml2 ) geoip? ( dev-libs/libmaxminddb ) geoip2? ( dev-libs/libmaxminddb ) gssapi? ( virtual/krb5 ) json? ( dev-libs/json-c:= ) lmdb? ( dev-db/lmdb ) zlib? ( sys-libs/zlib ) dnstap? ( dev-libs/fstrm dev-libs/protobuf-c ) >=dev-libs/libuv-1.40.0:= selinux? ( sec-policy/selinux-bind ) sys-process/psmisc !net-dns/bind-tools virtual/tmpfiles
 RESTRICT=test mirror
 SLOT=0
-SRC_URI=https://downloads.isc.org/isc/bind9/9.18.27/bind-9.18.27.tar.xz doc? ( mirror://gentoo/dyndns-samples.tbz2 )
+SRC_URI=https://downloads.isc.org/isc/bind9/9.18.27/bind-9.18.27.tar.xz
 _eclasses_=gnuconfig	a397adda6984a4c423e28ac274c1ba98	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	libtool	5f49a16f67f81bdf873e3d1f10b10001	autotools	dc70c1dc473b68317fc4a86f5fbfc57d	systemd	c8b03e8df84486aa991d4396686e8942	tmpfiles	216aa76c3a6fcb5d893c23a0de86048f	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	python-utils-r1	8b220bbce5c119fb1d4d5c2f5588f3ea	python-any-r1	f5169813d1619761b459800587005fd2
-_md5_=a96c6b35d18b0bf0d9a4bda731bfdc33
+_md5_=6d13e24fd93c5b293c5222922b379cb8
