@@ -6,7 +6,7 @@ acct-user/lemmy 0: User for www-servers/lemmy
 acct-user/wsdd 0: User for net-misc/wsdd
 app-crypt/acme 2.9.0: An implementation of the ACME protocol
 app-crypt/certbot 2.9.0: Let’s Encrypt client to automate deployment of X.509 certificates
-app-crypt/certbot-dns-cloudflare 2.10.0-r1 2.11.0-r1: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
+app-crypt/certbot-dns-cloudflare 2.10.0-r2 2.11.0-r2: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
 dev-embedded/rpi-eeprom 9999: Updater for Raspberry Pi 4 bootloader and the VL805 USB controller
 dev-embedded/rpi-utils 9999: Misc useful commands for Raspberry Pis
 dev-python/cloudflare 2.19.4 2.20.0 3.0.1 9999: Python wrapper for the Cloudflare v4 API
@@ -18,6 +18,7 @@ games-util/libray 0.0.9: an application for extracting, repackaging, and en/decr
 media-libs/raspberrypi-userland 9999: Raspberry Pi userspace tools and libraries
 net-dns/bind 9.18.27 9.18.9999: Berkeley Internet Name Domain - Name Server
 net-dns/bind-adblock 9999: Fetch various blocklists and generate a BIND zone from them.
+net-libs/nodejs 22.4.1: A JavaScript runtime built on Chrome's V8 JavaScript engine
 net-misc/gdrive 3.9.0 3.9.1: Google Drive CLI Client
 net-misc/geoipsets 2.3.5: Utility to generate country-specific network ranges
 net-misc/rabbitmq-server 3.12.2: RabbitMQ is a high-performance AMQP-compliant message broker written in Erlang
