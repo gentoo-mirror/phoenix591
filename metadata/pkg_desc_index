@@ -1,8 +1,4 @@
-acct-group/foundationdb 0: System group: foundationdb
-acct-group/lemmy 0: Group for www-servers/lemmy
 acct-group/wsdd 0: Group for net-misc/wsdd
-acct-user/foundationdb 0: System user: foundationdb
-acct-user/lemmy 0: User for www-servers/lemmy
 acct-user/wsdd 0: User for net-misc/wsdd
 app-crypt/certbot-dns-cloudflare 2.10.0-r2 2.11.0-r2: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
 dev-embedded/rpi-eeprom 9999: Updater for Raspberry Pi 4 bootloader and the VL805 USB controller
@@ -11,19 +7,15 @@ dev-python/cloudflare 2.19.4 2.20.0 3.1.0: Python wrapper for the Cloudflare v4 
 dev-python/jsonlines 4.0.0 9999: Library with helpers for the jsonlines file format
 dev-python/msal 1.30.0: Microsoft Authentication Library for Python allows integration with Microsoft
 dev-vcs/trufflehog 3.81.4 3.81.9: Find credentials all over the place
-games-emulation/rpcs3 9999: PS3 emulator and debugger.
-games-util/libray 0.0.9: an application for extracting, repackaging, and en/decrypting PS3 ISOs
+games-util/libray 0.0.9 0.0.10: an application for extracting, repackaging, and en/decrypting PS3 ISOs
 media-libs/raspberrypi-userland 9999: Raspberry Pi userspace tools and libraries
 net-dns/bind 9.18.28 9.18.9999 9.20.0 9.20.1: Berkeley Internet Name Domain - Name Server
 net-dns/bind-adblock 9999: Fetch various blocklists and generate a BIND zone from them.
-net-misc/gdrive 3.9.0 3.9.1: Google Drive CLI Client
-net-misc/geoipsets 2.3.5: Utility to generate country-specific network ranges
-net-misc/rabbitmq-server 3.12.2: RabbitMQ is a high-performance AMQP-compliant message broker written in Erlang
+net-misc/gdrive 3.9.1: Google Drive CLI Client
+net-misc/geoipsets 2.3.6: Utility to generate country-specific network ranges
 net-misc/sasl-xoauth2 0.24: Sasl plugin to facilitate oauth2, tested with postfix
 net-misc/wsdd 9999: A Web Service Discovery host daemon.
 net-voip/mumble 1.4.230 1.4.9999 9999: Mumble is an open source, low-latency, high quality voice chat software
-perl-gcpan/Image-ExifTool 12.70: Read and write meta information
-sys-fs/e2fsck-static 1.47.0 1.47.1: Standard EXT2/EXT3/EXT4 filesystem utilities
-sys-kernel/modprobed-db 2.46: This utility tracks modules loaded by the kernel, for localmodconfig
-sys-kernel/rpi-kernel 6.1.9999 6.6.9999 6.9.9999: Linux kernel built with Raspberry Pi patches
-www-servers/lemmy-server 0.18.5 0.18.9999 9999: A link aggregator for the fediverse
+sys-fs/e2fsck-static 1.47.1: Standard EXT2/EXT3/EXT4 filesystem utilities
+sys-kernel/modprobed-db 2.46 2.47: This utility tracks modules loaded by the kernel, for localmodconfig
+sys-kernel/rpi-kernel 6.1.9999 6.6.9999 6.10.9999: Linux kernel built with Raspberry Pi patches
