@@ -9,12 +9,6 @@ net-dns/bind:geoip2 - Enable GeoIP2 API from MaxMind
 net-dns/bind:gssapi - Enable gssapi support
 net-dns/bind:json - Enable JSON statistics channel
 net-dns/bind:lmdb - Enable LMDB support to store configuration for 'addzone' zones
-net-voip/mumble:g15 - Enable support for the Logitech G15 LCD (and compatible devices).
-net-voip/mumble:rnnoise - Enable alternative noise suppression option based on RNNoise.
-net-voip/mumble:speech - Enable text-to-speech support in Mumble.
-net-voip/mumble:system-json - Use the system nlohmann_json library instead of the bundled version.
-net-voip/mumble:system-ms-gsl - Use the system library instead of the bundled version.
-net-voip/mumble:system-rnnoise - Use the system dev-cpp/ms-gsl instead of the bundled version.
 sys-fs/e2fsck-static:lto - Build with link time optimization (LTO)
 sys-kernel/rpi-kernel:initramfs - Builds an initramfs with Dracut. Untested
 sys-kernel/rpi-kernel:pi1 - Builds the kernel for the Original Pi
