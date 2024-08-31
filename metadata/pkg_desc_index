@@ -9,7 +9,7 @@ dev-python/msal 1.30.0: Microsoft Authentication Library for Python allows integ
 dev-vcs/trufflehog 3.81.4 3.81.9: Find credentials all over the place
 games-util/libray 0.0.9 0.0.10: an application for extracting, repackaging, and en/decrypting PS3 ISOs
 media-libs/raspberrypi-userland 9999: Raspberry Pi userspace tools and libraries
-net-dns/bind 9.18.28 9.18.9999 9.20.0 9.20.1: Berkeley Internet Name Domain - Name Server
+net-dns/bind 9.18.28 9.18.9999 9.20.0 9.20.1 9.20.1-r1: Berkeley Internet Name Domain - Name Server
 net-dns/bind-adblock 9999: Fetch various blocklists and generate a BIND zone from them.
 net-misc/gdrive 3.9.1: Google Drive CLI Client
 net-misc/geoipsets 2.3.6: Utility to generate country-specific network ranges
