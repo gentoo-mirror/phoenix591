@@ -22,19 +22,19 @@ SLOT="0"
 IUSE="test"
 RESTRICT="!test? ( test )"
 RESTRICT+=" mirror" #overlay, no real issue
-RDEPEND="${DEPEND}
-	dev-python/msal[${PYTHON_USEDEP}]
-	${PYTHON_DEPS}"
 
 BDEPEND="
 	virtual/pkgconfig
 	virtual/pandoc
 "
 DEPEND="
-	net-misc/curl
-	dev-libs/jsoncpp
-	dev-libs/cyrus-sasl
+	net-misc/curl:=
+	dev-libs/jsoncpp:=
+	dev-libs/cyrus-sasl:2
 "
+RDEPEND="${DEPEND}
+	dev-python/msal[${PYTHON_USEDEP}]
+	${PYTHON_DEPS}"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 src_prepare() {
 	sed -i s/-Werror// src/CMakeLists.txt || die
