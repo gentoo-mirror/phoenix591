@@ -16,5 +16,4 @@ net-misc/geoipsets 2.3.6: Utility to generate country-specific network ranges
 net-misc/sasl-xoauth2 0.24-r1: Sasl plugin to facilitate oauth2, tested with postfix
 net-misc/wsdd 9999: A Web Service Discovery host daemon.
 sys-fs/e2fsck-static 1.47.1: Standard EXT2/EXT3/EXT4 filesystem utilities
-sys-kernel/modprobed-db 2.46 2.47: This utility tracks modules loaded by the kernel, for localmodconfig
 sys-kernel/rpi-kernel 6.1.9999 6.6.9999 6.10.9999: Linux kernel built with Raspberry Pi patches
