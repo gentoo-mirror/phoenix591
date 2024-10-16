@@ -59,7 +59,8 @@ DEPEND="
 	xml? ( dev-libs/libxml2 )
 	geoip? ( dev-libs/libmaxminddb:= )
 	geoip2? ( dev-libs/libmaxminddb:= )
-	gssapi? ( virtual/krb5 )
+	gssapi? ( virtual/krb5
+		sys-fs/e2fsprogs )
 	json? ( dev-libs/json-c:= )
 	lmdb? ( dev-db/lmdb )
 	zlib? ( sys-libs/zlib )
@@ -97,8 +98,6 @@ pkg_setup() {
 }
 
 PATCHES=(
-	"${FILESDIR}/bind-9.20.0-rndc-fix-v2.patch"
-	"${FILESDIR}/malloc_usable_size.patch"
 	"${FILESDIR}/jemalloc-dlz.patch"
 )
 
