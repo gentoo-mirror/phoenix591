@@ -3,7 +3,7 @@ acct-user/wsdd 0: User for net-misc/wsdd
 app-crypt/certbot-dns-cloudflare 2.10.0-r2 2.11.0-r2: Cloudflare DNS Authenticator plugin for Certbot (Let's Encrypt Client)
 dev-embedded/rpi-eeprom 9999: Updater for Raspberry Pi 4 bootloader and the VL805 USB controller
 dev-embedded/rpi-utils 9999: Misc useful commands for Raspberry Pis
-dev-python/cloudflare 2.19.4 2.20.0 3.1.0: Python wrapper for the Cloudflare v4 API
+dev-python/cloudflare 2.19.4 2.20.0 3.1.0-r3: Python wrapper for the Cloudflare v4 API
 dev-python/jsonlines 4.0.0 9999: Library with helpers for the jsonlines file format
 dev-python/msal 1.30.0: Microsoft Authentication Library for Python allows integration with Microsoft
 dev-vcs/trufflehog 3.82.2 3.83.0 3.83.2: Find credentials all over the place
@@ -16,4 +16,4 @@ net-misc/geoipsets 2.3.6: Utility to generate country-specific network ranges
 net-misc/sasl-xoauth2 0.24-r1 0.25: Sasl plugin to facilitate oauth2, tested with postfix
 net-misc/wsdd 9999: A Web Service Discovery host daemon.
 sys-fs/e2fsck-static 1.47.1: Standard EXT2/EXT3/EXT4 filesystem utilities
-sys-kernel/rpi-kernel 6.6.9999 6.10.9999 6.11.9999: Linux kernel built with Raspberry Pi patches
+sys-kernel/rpi-kernel 6.6.9999 6.11.9999 6.12.9999: Linux kernel built with Raspberry Pi patches
