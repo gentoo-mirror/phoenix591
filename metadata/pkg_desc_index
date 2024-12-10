@@ -6,7 +6,7 @@ dev-embedded/rpi-utils 9999: Misc useful commands for Raspberry Pis
 dev-python/cloudflare 2.19.4 2.20.0 3.1.0-r3: Python wrapper for the Cloudflare v4 API
 dev-python/jsonlines 4.0.0 9999: Library with helpers for the jsonlines file format
 dev-python/msal 1.30.0: Microsoft Authentication Library for Python allows integration with Microsoft
-dev-vcs/trufflehog 3.82.2 3.83.0 3.83.2: Find credentials all over the place
+dev-vcs/trufflehog 3.82.2 3.83.0 3.83.2 3.86.0: Find credentials all over the place
 games-util/libray 0.0.9 0.0.10: an application for extracting, repackaging, and en/decrypting PS3 ISOs
 media-libs/raspberrypi-userland 9999: Raspberry Pi userspace tools and libraries
 net-dns/bind 9.20.2 9.20.3: Berkeley Internet Name Domain - Name Server
