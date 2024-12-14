@@ -15,6 +15,7 @@ net-misc/gdrive 3.9.1: Google Drive CLI Client
 net-misc/geoipsets 2.3.6: Utility to generate country-specific network ranges
 net-misc/sasl-xoauth2 0.24-r1 0.25: Sasl plugin to facilitate oauth2, tested with postfix
 net-misc/wsdd 9999: A Web Service Discovery host daemon.
-net-wireless/gnuradio 3.10.11.0: Toolkit that provides signal processing blocks to implement software radios
+net-wireless/gnuradio 3.10.11.0 3.10.11.0-r1: Toolkit that provides signal processing blocks to implement software radios
+net-wireless/uhd 4.7.0.0: Universal Software Radio Peripheral (USRP) Hardware Driver
 sys-fs/e2fsck-static 1.47.1: Standard EXT2/EXT3/EXT4 filesystem utilities
 sys-kernel/rpi-kernel 6.6.9999 6.11.9999 6.12.9999: Linux kernel built with Raspberry Pi patches
