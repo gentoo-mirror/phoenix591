@@ -137,7 +137,10 @@ DEPEND="${RDEPEND}
 	zeromq? ( net-libs/cppzmq )
 "
 
-PATCHES=( "${FILESDIR}/30.10.11.0-numpy2.patch" )
+PATCHES=(
+	"${FILESDIR}/30.10.11.0-numpy2.patch"
+	"${FILESDIR}/gnuradio-3.10.11.0-gr-network-boost.1.87.patch"
+)
 
 src_prepare() {
 	xdg_environment_reset #534582
