@@ -3,6 +3,7 @@
 # * generated automatically using pmaint *
 
 dev-embedded/rpi-eeprom:tools - Install secure boot scripts and vl805 flash tool
+dev-python/httpx:cli - Install the CLI "httpx" client.
 net-dns/bind:dnstap - Enables dnstap packet logging
 net-dns/bind:fixed-rrset - Enables fixed rrset-order option
 net-dns/bind:geoip2 - Enable GeoIP2 API from MaxMind
