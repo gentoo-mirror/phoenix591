@@ -19,4 +19,4 @@ net-misc/wsdd 9999: A Web Service Discovery host daemon.
 net-wireless/gnuradio 3.10.11.0 3.10.11.0-r1: Toolkit that provides signal processing blocks to implement software radios
 net-wireless/uhd 4.7.0.0: Universal Software Radio Peripheral (USRP) Hardware Driver
 sys-fs/e2fsck-static 1.47.1 1.47.2: Standard EXT2/EXT3/EXT4 filesystem utilities
-sys-kernel/rpi-kernel 6.6.9999 6.11.9999 6.12.9999: Linux kernel built with Raspberry Pi patches
+sys-kernel/rpi-kernel 6.6.9999 6.12.9999 6.13.9999: Linux kernel built with Raspberry Pi patches
